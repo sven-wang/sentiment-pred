@@ -110,12 +110,12 @@ def runPart2(type,obs_space, e_param, count):
 
 ############################### Part 3 ######################################
 
-def sentimentScore(preScore, x):
+def forward(preScore, x):
     """inputs: preScore: list of (pre_score real_num, pre_parent int)
                x: current word
        output: list of max(score real_num, parent int) for all states, len=7
     """
-    score = []
+    layer = []
     for i in range(1, 8):  # i: 1~7
         temp_score = []
         # calculate emission first
@@ -129,8 +129,8 @@ def sentimentScore(preScore, x):
             temp_score.append(j_score)
         max_value = max(temp_score)
         max_index = temp_score.index(max_value)  # index: 0-6
-        score.append((max_value, max_index))
-    return score
+        layer.append((max_value, max_index))
+    return layer
 
 
 def viterbiAlgo(X):
@@ -140,7 +140,7 @@ def viterbiAlgo(X):
     # initialization
     n = len(X)
     Y = []
-    preScore = []
+    prev_layer = []
     # start -> 1
     x = X[0]
     for j in range(1, 8):
@@ -149,31 +149,31 @@ def viterbiAlgo(X):
         else:
             b = 1.0 / count[j]
         prob = t_param[0][j] * b
-        preScore.append((prob, 0))  # (prob, START)
-    scores = [[(1,-1)],preScore]
+        prev_layer.append((prob, 0))  # (prob, START)
+    layers = [[(1,-1)],prev_layer]
 
     # calculate path i=(1,...,n)
     for i in range(1, n):  # 1 -> n-1
-        score = sentimentScore(scores[i], X[i])  # a list of max(score: real, parent: int) for all 7 states
-        scores.append(score)
+        score = forward(layers[i], X[i])  # a list of max(score: real, parent: int) for all 7 states
+        layers.append(score)
 
     # calculate score(n+1, STOP), and get max
     temp_score = []
     for j in range(1, 8):
         # score = preScore*a
-        t_score = scores[n][j-1][0] * (t_param[j][8])
+        t_score = layers[n][j-1][0] * (t_param[j][8])
         temp_score.append(t_score)
     max_value = max(temp_score)
     max_index = temp_score.index(max_value)
-    scores.append([(max_value, max_index)])
+    layers.append([(max_value, max_index)])
     # pp.pprint(scores)
 
     # backtracking
     parent = 0  # only 1 entry in STOP
     for i in range(n+1, 1, -1):  # index range from N to 2
-        parent = scores[i][parent][1]
+        parent = layers[i][parent][1]
         Y.insert(0, l[parent + 1])  # 1-7
-    # print(Y)
+    print(Y)
     return Y
 
 
@@ -194,8 +194,8 @@ def runPart3(type,obs_space, e_param, t_param, count):
             X.append(r)
 
 
-for type in ["EN", "CN", "SG", "ES"]:
-# for type in ["EN"]:
+# for type in ["EN", "CN", "SG", "ES"]:
+for type in ["EN"]:
     obs_space, e_param, t_param, count = train(type)
     runPart2(type,obs_space, e_param, count)
     runPart3(type,obs_space, e_param, t_param, count)
