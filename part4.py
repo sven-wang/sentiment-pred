@@ -178,7 +178,7 @@ def viterbiAlgo(X, k):
         Y.insert(0, l[a + 1])  # 1-7
         parent_index = a
         parent_sub = b
-    print(Y)
+    # print(Y)
     return Y
 
 
