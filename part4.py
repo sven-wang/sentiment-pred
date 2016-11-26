@@ -88,86 +88,109 @@ def train(type):
 
 ############################### Part 4 ######################################
 
-# TODO: score = [[state 1],[],...,[state 7]]
-# [state 1] = [(1st),...,(kth)]
-# (1st) = (prob, parent_index, parent_sub)
+# TODO: layer = [[state 1],[],...,[state 7]]
+# [state 1] = [[1st (0)]],...,[kth (k-1)]]
+# [1st] = [prob, parent_index (0,n), parent_sub (0,k-1)]
 
-def sentimentScore(preScore, x):
-    """inputs: preScore: list of (pre_score real_num, pre_parent int)
+def forward(prev_layer, x, k):
+    """inputs: prev_layer: list of list of top k best [score, partent_index (0, 6), parent_sub (0, k-1)] for all states
                x: current word
-       output: list of max(score real_num, parent int) for all states, len=7
+               k: top k best
+       output: list of top k best [score, partent_index (0, 6), parent_sub (0, k-1)] for all states, len=7
     """
-    score = []
+    layer = []
     for i in range(1, 8):  # i: 1~7
         temp_score = []
+        states = []
+        n = len(prev_layer[0])
         # calculate emission first
         if (x in obs_space):
             b = e_param[i][x]
         else:
             b = 1.0 / count[i]
-        for j in range(1, 8):  # j:1-7 ##                  TODO:add a for loop
-            # score = preScore*a*b
-            j_score = preScore[j-1][0] * (t_param[j][i]) * b  # trans 1~7 -> 1-7
-            temp_score.append(j_score)
-        max_value = max(temp_score) #                       TODO: order and take top k
-        max_index = temp_score.index(max_value)  # index: 0-6
-        score.append((max_value, max_index))
-    return score
+        for j in range(1, 8):  # j:1-7
+            for sub in range(0, n): # n scores for each prev_node
+                # score = prev_layer*a*b
+                j_score = prev_layer[j-1][sub][0] * (t_param[j][i]) * b
+                temp_score.append([j_score, j-1, sub])  # 7*n scores with their parents
+        temp_score.sort(key=lambda tup:tup[0],reverse=True) # sort by j_score
+        for sub in range(0, k):   # get top k best
+            states.append(temp_score[sub])
+        layer.append(states)
+    return layer
 
 
-def viterbiAlgo(X):
-    """input: X, words list
+def viterbiAlgo(X, k):
+    """input:  X, words list
+               k, top k best
        output: Y, sentiment list
     """
     # initialization
     n = len(X)
     Y = []
-    preScore = []
-    # start -> 1
+    prev_layer = []
+    # calculate layer (start ->) 1
     x = X[0]
     for j in range(1, 8):
+        state = []
         if (x in obs_space):
             b = e_param[j][x]
         else:
             b = 1.0 / count[j]
         prob = t_param[0][j] * b
-        preScore.append((prob, 0))  # (prob, START)
-    layers = [[(1, -1)], preScore]
+        state.append([prob, 0, 0])  # [prob, START, 1st best]
+        prev_layer.append(state)
+    layers = [[(1, -1, 0)], prev_layer]
+    # pp.pprint(prev_layer)
 
-    # calculate path i=(1,...,n)
-    for i in range(1, n):  # 1 -> n-1
-        score = sentimentScore(layers[i], X[i])  # a list of max(score: real, parent: int) for all 7 states
-        layers.append(score)
 
-    # calculate score(n+1, STOP), and get max
+    # calculate layer (2,...,n)
+    for i in range(1, n):  # prev_layer: 1 -> n-1
+        layer = forward(layers[i], X[i], k)  # a list of top k best scores for all 7 states
+        layers.append(layer)
+        # pp.pprint("--------layer "+ str(i)+"----------")
+        # pp.pprint(layer)
+
+
+    # calculate layer n+1 (STOP), and get top k best
+    layer = []
     temp_score = []
-    for j in range(1, 8):
-        # score = preScore*a
-        t_score = layers[n][j - 1][0] * (t_param[j][8])
-        temp_score.append(t_score)
-    max_value = max(temp_score)
-    max_index = temp_score.index(max_value)
-    layers.append([(max_value, max_index)])
-    # pp.pprint(scores)
+    states = []
+    for j in range(1, 8):  # j:1-7
+        for sub in range(0, k):  # kth score for each prev_node
+            # score = prev_layer*a
+            t_score = layers[n][j - 1][sub][0] * (t_param[j][8])
+            temp_score.append([t_score, j - 1, sub])  # 7*k scores with thier parents
+    temp_score.sort(key=lambda tup: tup[0], reverse=True)  # sort by j_score
+    for sub in range(0, k):  # get top k best
+        states.append(temp_score[sub])
+    layer.append(states)
+    layers.append(layer)
+    pp.pprint(layer)
+    # pp.pprint(layers)
 
     # backtracking
-    parent = 0   # only 1 entry in STOP
+    parent_index = 0    # only 1 state in STOP
+    parent_sub = k-1   # kth best score in STOP layer
     for i in range(n+1, 1, -1):  # index range from N to 2
-        parent = layers[i][parent][1]
-        Y.insert(0, l[parent + 1])  # 1-7
-    # print(Y)
+        a = layers[i][parent_index][parent_sub][1]
+        b = layers[i][parent_index][parent_sub][2]
+        Y.insert(0, l[a + 1])  # 1-7
+        parent_index = a
+        parent_sub = b
+    print(Y)
     return Y
 
 
-def runPart4(type,obs_space, e_param, t_param, count):
+def runPart4(type,obs_space, e_param, t_param, count, k):
     dev_file = open(type+'/dev.in', 'r')
-    out_file = open(type+'/dev.p3.out', 'w')
+    out_file = open(type+'/dev.p4.out', 'w')
     X = []
     for r in dev_file:
         r = r.strip()
         if (r == ''):
             # end of a sequence
-            Y = viterbiAlgo(X)
+            Y = viterbiAlgo(X, k)
             for i in range(0, len(X)):
                 out_file.write('' + X[i] + " " + Y[i] + '\n')
             out_file.write('\n')
@@ -176,9 +199,10 @@ def runPart4(type,obs_space, e_param, t_param, count):
             X.append(r)
 
 
-for type in ["EN", "CN", "SG", "ES"]:
-# for type in ["EN"]:
+# for type in ["EN", "CN", "SG", "ES"]:
+for type in ["EN"]:
     obs_space, e_param, t_param, count = train(type)
-    runPart4(type,obs_space, e_param, t_param, count)
+    k = 5 ## top 5 best
+    runPart4(type,obs_space, e_param, t_param, count, k)
 
     # pp.pprint(count)
