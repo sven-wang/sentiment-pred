@@ -30,7 +30,7 @@ def get_predicted(predicted, answers=defaultdict(lambda: defaultdict(defaultdict
             last_ne = "O"
             continue
         else:
-            print (line)
+            # print (line)
             split_line = line.split(separator)
             #word = split_line[0]
             value = split_line[outputColumnIndex]
