@@ -86,29 +86,11 @@ def train(type):
 
     return obs_space, e_param, t_param, count
 
+############################### Part 4 ######################################
 
-############################################## PART 2 ###############################################
-def runPart2(type,obs_space, e_param, count):
-    dev_file = open(type+'/dev.in','r')
-    output_file = open(type+'/dev.p2.out','w')
-    for o in dev_file:
-        o = o.strip()
-        if (o== ''):
-            output_file.write('\n')
-            continue
-        temp_list = []
-        #y* = argmax(e(x|y))
-        for j in range(1,8):
-            if (o in obs_space):
-                temp_list.append(e_param[j][o])
-            else:
-                temp_list.append(1.0/count[j])
-        max_value = max(temp_list)
-        max_index = temp_list.index(max_value)   # 0-6
-        output_file.write(o + " " + l[max_index+1] + '\n') # 1-7
-
-
-############################### Part 3 ######################################
+# TODO: score = [[state 1],[],...,[state 7]]
+# [state 1] = [(1st),...,(kth)]
+# (1st) = (prob, parent_index, parent_sub)
 
 def sentimentScore(preScore, x):
     """inputs: preScore: list of (pre_score real_num, pre_parent int)
@@ -123,11 +105,11 @@ def sentimentScore(preScore, x):
             b = e_param[i][x]
         else:
             b = 1.0 / count[i]
-        for j in range(1, 8):  # j:1-7
+        for j in range(1, 8):  # j:1-7 ##                  TODO:add a for loop
             # score = preScore*a*b
             j_score = preScore[j-1][0] * (t_param[j][i]) * b  # trans 1~7 -> 1-7
             temp_score.append(j_score)
-        max_value = max(temp_score)
+        max_value = max(temp_score) #                       TODO: order and take top k
         max_index = temp_score.index(max_value)  # index: 0-6
         score.append((max_value, max_index))
     return score
@@ -150,34 +132,34 @@ def viterbiAlgo(X):
             b = 1.0 / count[j]
         prob = t_param[0][j] * b
         preScore.append((prob, 0))  # (prob, START)
-    scores = [[(1,-1)],preScore]
+    layers = [[(1, -1)], preScore]
 
     # calculate path i=(1,...,n)
     for i in range(1, n):  # 1 -> n-1
-        score = sentimentScore(scores[i], X[i])  # a list of max(score: real, parent: int) for all 7 states
-        scores.append(score)
+        score = sentimentScore(layers[i], X[i])  # a list of max(score: real, parent: int) for all 7 states
+        layers.append(score)
 
     # calculate score(n+1, STOP), and get max
     temp_score = []
     for j in range(1, 8):
         # score = preScore*a
-        t_score = scores[n][j-1][0] * (t_param[j][8])
+        t_score = layers[n][j - 1][0] * (t_param[j][8])
         temp_score.append(t_score)
     max_value = max(temp_score)
     max_index = temp_score.index(max_value)
-    scores.append([(max_value, max_index)])
+    layers.append([(max_value, max_index)])
     # pp.pprint(scores)
 
     # backtracking
-    parent = 0  # only 1 entry in STOP
+    parent = 0   # only 1 entry in STOP
     for i in range(n+1, 1, -1):  # index range from N to 2
-        parent = scores[i][parent][1]
+        parent = layers[i][parent][1]
         Y.insert(0, l[parent + 1])  # 1-7
     # print(Y)
     return Y
 
 
-def runPart3(type,obs_space, e_param, t_param, count):
+def runPart4(type,obs_space, e_param, t_param, count):
     dev_file = open(type+'/dev.in', 'r')
     out_file = open(type+'/dev.p3.out', 'w')
     X = []
@@ -197,7 +179,6 @@ def runPart3(type,obs_space, e_param, t_param, count):
 for type in ["EN", "CN", "SG", "ES"]:
 # for type in ["EN"]:
     obs_space, e_param, t_param, count = train(type)
-    runPart2(type,obs_space, e_param, count)
-    runPart3(type,obs_space, e_param, t_param, count)
+    runPart4(type,obs_space, e_param, t_param, count)
 
     # pp.pprint(count)
