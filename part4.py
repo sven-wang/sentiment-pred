@@ -156,14 +156,13 @@ def viterbiAlgo(X, k):
     layer = []
     temp_score = []
     states = []
+    failed = False
     for j in range(1, 8):  # j:1-7
-        for sub in range(0, k):  # kth score for each prev_node
+        for sub in range(0, len(layers[n][0])):  # kth score for each prev_node
             # score = prev_layer*a
-            try:
-                t_score = layers[n][j - 1][sub][0] * (t_param[j][8]) # TODO: for ES data set, index out of range caused by sub, for sub = 1,2,3,4
-            except:
-                print j, sub
+            t_score = layers[n][j - 1][sub][0] * (t_param[j][8]) # TODO: for ES data set, index out of range caused by sub, for sub = 1,2,3,4
             temp_score.append([t_score, j - 1, sub])  # 7*k scores with thier parents
+
     temp_score.sort(key=lambda tup: tup[0], reverse=True)  # sort by j_score
     for sub in range(0, k):  # get top k best
         states.append(temp_score[sub])
@@ -202,7 +201,7 @@ def runPart4(type,obs_space, e_param, t_param, count, k):
             X.append(r)
 
 
-for type in ["EN", "ES"]:
+for type in [ "ES","EN"]:
 # for type in ["EN"]:
 
     print "Doing " + type
