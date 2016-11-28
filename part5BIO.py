@@ -2,28 +2,27 @@ import pprint
 pp = pprint.PrettyPrinter(indent=5)
 
 # for quick access, to get the location of each sentiment in the dictionary
-dic = {'START': 0, 'B-positive': 1, 'B-neutral': 2, 'B-negative': 3, 'I-positive': 4, 'I-neutral': 5, 'I-negative': 6,
-       'O': 7, 'STOP': 8}
-l = ['START', 'B-positive', 'B-neutral', 'B-negative', 'I-positive', 'I-neutral', 'I-negative', 'O', 'STOP']
+dic = {'START': 0, 'B': 1, 'I': 2, 'O': 3, 'STOP': 4}
+l = ['START', 'B', 'I', 'O', 'STOP']
 
 def train(type):
     ############################# initialize parameter ####################################
 
     # store emission parameters
     # data structure: tuple + dictionary
-    e_count = ({}, {}, {}, {}, {}, {}, {}, {})  ## 1st dict empty (start no emission)
-    e_param = ({}, {}, {}, {}, {}, {}, {}, {})  ## 1st dict empty (start no emission)
+    e_count = ({}, {}, {}, {})  ## 1st dict empty (start no emission)
+    e_param = ({}, {}, {}, {})  ## 1st dict empty (start no emission)
 
     # store transition parameters
-    # initialize as a 9*8 matrix of zeros
-    w, h = 9, 8
+    # initialize as a 5*4 matrix of zeros
+    w, h = 5, 4
     t_param = [[0] * w for i in range(h)]
 
     # count # of sentiment appears+1
-    """data structure: vector [8] (from START to 'O')
+    """data structure: vector [4] (from START to 'O')
           vector[i] = sum(t_param[i])+1
     """
-    count = [0] * 8
+    count = [0] * 4
 
     ## read and parse file
     train_file = open(type+'/train', 'r')
@@ -54,13 +53,13 @@ def train(type):
         except:
             # meaning the end of a sentence: x->STOP
             pre_position = dic[u]
-            t_param[pre_position][8] += 1
+            t_param[pre_position][4] += 1
             u = 'START'
 
     # get count(yi)+1
-    for i in range(0, 8):
+    for i in range(0, 4):
         temp_sum = 0
-        for j in range(0, 9):
+        for j in range(0, 5):
             temp_sum = temp_sum + t_param[i][j]
         count[i] = temp_sum + 1
     # print (t_param)
@@ -69,15 +68,15 @@ def train(type):
     # print e_count
 
     ## convert transision param to probablity
-    for i in range(0, 8):
-        for j in range(0, 8):
+    for i in range(0, 4):
+        for j in range(0, 4):
             t_param[i][j] = 1.0 * t_param[i][j] / count[i]
     # print (t_param)
 
-    # building emission params table: a list of 8 dicts, each dict has all obs as keys,
+    # building emission params table: a list of 4 dicts, each dict has all obs as keys,
     # value is 0 if obs never appears for this state
 
-    for i in range(1,8): # state 1-7
+    for i in range(1,4): # state 1-7
         for obs in obs_space:
             if obs not in e_count[i]:
                 e_param[i][obs] = 0 / max(count) ## ???????????????????????????????????????????????????????????????????????????????????????? whether should be 0?? or lowest prob of all
@@ -98,7 +97,7 @@ def runPart2(type,obs_space, e_param, count):
             continue
         temp_list = []
         #y* = argmax(e(x|y))
-        for j in range(1,8):
+        for j in range(1,4):
             if (o in obs_space):
                 temp_list.append(e_param[j][o])
             else:
@@ -116,14 +115,14 @@ def forward(preScore, x):
        output: list of max(score real_num, parent int) for all states, len=7
     """
     layer = []
-    for i in range(1, 8):  # i: 1~7
+    for i in range(1, 4):  # i: 1~7
         temp_score = []
         # calculate emission first
         if (x in obs_space):
             b = e_param[i][x]
         else:
             b = 1.0 / count[i]
-        for j in range(1, 8):  # j:1-7
+        for j in range(1, 4):  # j:1-7
             # score = preScore*a*b
             j_score = preScore[j-1][0] * (t_param[j][i]) * b  # trans 1~7 -> 1-7
             temp_score.append(j_score)
@@ -143,7 +142,7 @@ def viterbiAlgo(X):
     prev_layer = []
     # start -> 1
     x = X[0]
-    for j in range(1, 8):
+    for j in range(1, 4):
         if (x in obs_space):
             b = e_param[j][x]
         else:
@@ -159,9 +158,9 @@ def viterbiAlgo(X):
 
     # calculate score(n+1, STOP), and get max
     temp_score = []
-    for j in range(1, 8):
+    for j in range(1, 4):
         # score = preScore*a
-        t_score = layers[n][j-1][0] * (t_param[j][8])
+        t_score = layers[n][j-1][0] * (t_param[j][4])
         temp_score.append(t_score)
     max_value = max(temp_score)
     max_index = temp_score.index(max_value)
@@ -179,7 +178,7 @@ def viterbiAlgo(X):
 
 def runPart3(type,obs_space, e_param, t_param, count):
     dev_file = open(type+'/dev.in', 'r')
-    out_file = open(type+'/dev.p3.out', 'w')
+    out_file = open(type+'/dev.p5.out', 'w')
     X = []
     for r in dev_file:
         r = r.strip()
