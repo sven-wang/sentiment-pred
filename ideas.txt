@@ -1,0 +1,12 @@
+IDEAS for Part5
+
+1. Do BIO name entity recognition first and assign “neutral” sentiment to all entities
+	should be a good baseline, at least better than HMM-viterbi
+
+2. from simple observation, our model may not make sense because the sentiment of a NE is often determined by some other words in the sentence. For example, negative: died, bad… positive: favourite, best, love. Maybe we can do
+
+dictionary-based sentiment analysis 
+http://fjavieralba.com/basic-sentiment-analysis-with-python.html
+
+Twitter sentiment analysis using Python and NLTK
+http://www.laurentluce.com/posts/twitter-sentiment-analysis-using-python-and-nltk/
