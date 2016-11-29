@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0d4fde-d1d9-4e15-addc-116c4c0b0019" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EN_train/out2in.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part2&amp;3.py" afterPath="$PROJECT_DIR$/part2&amp;3.py" />
     </list>
     <ignored path="sentiment-pred.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -603,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480342379923</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="tried out splitting train data to train and dev, score only 10-12 though">
+      <created>1480411521222</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1480411521222</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -670,7 +675,8 @@
     <MESSAGE value="tried out some (not useful)stuff and added IDEAS for part5" />
     <MESSAGE value="ideas.txt" />
     <MESSAGE value="tried out only BIO states, 0.28 f score" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried out only BIO states, 0.28 f score" />
+    <MESSAGE value="tried out splitting train data to train and dev, score only 10-12 though" />
+    <option name="LAST_COMMIT_MESSAGE" value="tried out splitting train data to train and dev, score only 10-12 though" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
