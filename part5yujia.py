@@ -30,7 +30,7 @@ def train():
     for obs in train_file:
         try:
             obs, v = obs.split()
-            obs = obs.strip()
+            obs = obs.strip().lower()
             v = v.strip()
             v = v[0]  ## get BIO
             position = dic[v]  ## position: 1~7
@@ -219,10 +219,10 @@ def viterbiAlgo(X, dic_words):
             not_flag = not not_flag
         if (not_flag & (w in dic_words)):
             for i in range(0, 3):
-                sentiment_score[i] -= dic_words[w][i] / (dic_words[w][0] + dic_words[w][1] + dic_words[w][2])
+                sentiment_score[i] -= dic_words[w][i]  # /(dic_words[w][0]+dic_words[w][1]+dic_words[w][2])
         elif (w in dic_words):
             for i in range(0, 3):
-                sentiment_score[i] += dic_words[w][i] / (dic_words[w][0] + dic_words[w][1] + dic_words[w][2])
+                sentiment_score[i] += dic_words[w][i]  # /(dic_words[w][0]+dic_words[w][1]+dic_words[w][2])
 
     max_sentiment = max(sentiment_score)
     sentiment = l_sentiment[sentiment_score.index(max_sentiment)]
@@ -238,7 +238,8 @@ def runPart3(obs_space, e_param, t_param, count, dic_words):
     out_file = open('dev_EN.p5.out', 'w')
     X = []
     for r in dev_file:
-        r = r.strip()
+        r = r.strip().lower()
+
         if (r == ''):
             # end of a sequence
             Y = viterbiAlgo(X, dic_words)
