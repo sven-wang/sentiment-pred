@@ -1,11 +1,9 @@
-import pprint
-pp = pprint.PrettyPrinter(indent=5)
-
 # for quick access, to get the location of each sentiment in the dictionary
 dic = {'START': 0, 'B': 1, 'I': 2, 'O': 3, 'STOP': 4}
 l = ['START', 'B', 'I', 'O', 'STOP']
 
-def train(type):
+
+def train():
     ############################# initialize parameter ####################################
 
     # store emission parameters
@@ -25,7 +23,7 @@ def train(type):
     count = [0] * 4
 
     ## read and parse file
-    train_file = open(type+'/iob.train', 'r')
+    train_file = open('train_EN', 'r')
     u = 'START'
     obs_space = set()
 
@@ -34,6 +32,7 @@ def train(type):
             obs, v = obs.split()
             obs = obs.strip()
             v = v.strip()
+            v = v[0]  ## get BIO
             position = dic[v]  ## position: 1~7
             # update e_count
             if (obs in e_count[position]):
@@ -63,9 +62,8 @@ def train(type):
             temp_sum = temp_sum + t_param[i][j]
         count[i] = temp_sum + 1
     # print (t_param)
-    # pp.pprint (e_count)
     # print (count)
-    # print e_count
+    # print (e_count)
 
     ## convert transision param to probablity
     for i in range(0, 4):
@@ -76,35 +74,72 @@ def train(type):
     # building emission params table: a list of 4 dicts, each dict has all obs as keys,
     # value is 0 if obs never appears for this state
 
-    for i in range(1,4): # state 1-7
+    for i in range(1, 4):  # state 1-7
         for obs in obs_space:
             if obs not in e_count[i]:
-                e_param[i][obs] = 0 / max(count) ## ???????????????????????????????????????????????????????????????????????????????????????? whether should be 0?? or lowest prob of all
+                e_param[i][obs] = 0 / max(
+                    count)  ## ???????????????????????????????????????????????????????????????????????????????????????? whether should be 0?? or lowest prob of all
             else:
                 e_param[i][obs] = 1.0 * e_count[i][obs] / count[i]
 
     return obs_space, e_param, t_param, count
 
 
-############################################## PART 2 ###############################################
-def runPart2(type,obs_space, e_param, count):
-    dev_file = open(type+'/dev.in','r')
-    output_file = open(type+'/dev.p2.out','w')
-    for o in dev_file:
-        o = o.strip()
-        if (o== ''):
-            output_file.write('\n')
-            continue
-        temp_list = []
-        #y* = argmax(e(x|y))
-        for j in range(1,4):
-            if (o in obs_space):
-                temp_list.append(e_param[j][o])
-            else:
-                temp_list.append(1.0/count[j])
-        max_value = max(temp_list)
-        max_index = temp_list.index(max_value)   # 0-6
-        output_file.write(o + " " + l[max_index+1] + '\n') # 1-7
+################################# Naive Bayes Sentiment Analysis Train ############################
+dic_sentiment = {'negative': 0, 'neutral': 1, 'positive': 2}
+l_sentiment = ['nagative', 'neutral', 'positive']
+not_set = set(['not', 'but', 'yet', 'any', 'no'])  ## for negation
+meaningless_set = set(['i', 'is', 'are', 'do', 'does', 'did', ',', 'a', '.', 'am', 'an', 'because'])  ## eliminate words
+
+
+def sentimentTrain():
+    ############### Initialize Parameter #################
+
+    ## store the sentiment for each word appear in the training set
+    dic_words = {}
+
+    ## read and parse file
+    train_file = open('train_EN', 'r')
+    not_flag = False
+    sentiment_score = 0  # initialize neutral sentiment
+    X = []
+
+    for obs in train_file:
+        try:
+            obs, v = obs.split()
+            obs = obs.strip().lower()
+            v = v.strip()
+            # collect all the words in sentence
+            if (obs not in meaningless_set):
+                X.append(obs)
+            # calculate the sentiment of the sentence: negative: -1 netrual: 0 positive: +1
+            if (v[0] == 'B'):
+                sentiment_score += dic_sentiment[v.split('-')[1]] - 1
+        except:
+            # meaning the end of a sentence
+            for w in X:
+                # assumption: any word's sentiment that appears after negation is the opposite of sentence sentiment
+                if (w in not_set):
+                    not_flag = not not_flag
+                if (not_flag):
+                    sentiment_score *= -1
+                # fill up the dic
+                # get sentiment position first:
+                if (sentiment_score == 0):
+                    p = 1
+                else:
+                    p = (sentiment_score > 0) * 2  # if true: p = 2, if false: p = 0
+                if (w in dic_words):
+                    dic_words[w][p] += 1
+                else:
+                    dic_words[w] = [0, 0, 0]
+                    dic_words[w][p] += 1
+            X = []
+            sentiment_score = 0
+            not_flag = False
+
+    # print(dic_words)
+    return dic_words
 
 
 ############################### Part 3 ######################################
@@ -124,7 +159,7 @@ def forward(preScore, x):
             b = 1.0 / count[i]
         for j in range(1, 4):  # j:1-7
             # score = preScore*a*b
-            j_score = preScore[j-1][0] * (t_param[j][i]) * b  # trans 1~7 -> 1-7
+            j_score = preScore[j - 1][0] * (t_param[j][i]) * b  # trans 1~7 -> 1-7
             temp_score.append(j_score)
         max_value = max(temp_score)
         max_index = temp_score.index(max_value)  # index: 0-6
@@ -132,7 +167,7 @@ def forward(preScore, x):
     return layer
 
 
-def viterbiAlgo(X):
+def viterbiAlgo(X, dic_words):
     """input: X, words list
        output: Y, sentiment list
     """
@@ -149,7 +184,7 @@ def viterbiAlgo(X):
             b = 1.0 / count[j]
         prob = t_param[0][j] * b
         prev_layer.append((prob, 0))  # (prob, START)
-    layers = [[(1,-1)],prev_layer]
+    layers = [[(1, -1)], prev_layer]
 
     # calculate path i=(1,...,n)
     for i in range(1, n):  # 1 -> n-1
@@ -160,46 +195,62 @@ def viterbiAlgo(X):
     temp_score = []
     for j in range(1, 4):
         # score = preScore*a
-        t_score = layers[n][j-1][0] * (t_param[j][4])
+        t_score = layers[n][j - 1][0] * (t_param[j][4])
         temp_score.append(t_score)
     max_value = max(temp_score)
     max_index = temp_score.index(max_value)
     layers.append([(max_value, max_index)])
-    # pp.pprint(scores)
+    # print(scores)
 
     # backtracking
     parent = 0  # only 1 entry in STOP
-    for i in range(n+1, 1, -1):  # index range from N to 2
+    for i in range(n + 1, 1, -1):  # index range from N to 2
         parent = layers[i][parent][1]
         Y.insert(0, l[parent + 1])  # 1-7
+    # print(Y)
+
+    ########calculate sentiment
+    not_flag = False
+    sentiment_score = [0.0, 0.0, 0.0]
+
+    for w in X:
+        w = w.lower()
+        if (w in not_set):
+            not_flag = not not_flag
+        if (not_flag & (w in dic_words)):
+            for i in range(0, 3):
+                sentiment_score[i] -= dic_words[w][i] / (dic_words[w][0] + dic_words[w][1] + dic_words[w][2])
+        elif (w in dic_words):
+            for i in range(0, 3):
+                sentiment_score[i] += dic_words[w][i] / (dic_words[w][0] + dic_words[w][1] + dic_words[w][2])
+
+    max_sentiment = max(sentiment_score)
+    sentiment = l_sentiment[sentiment_score.index(max_sentiment)]
+    for i in range(0, len(Y)):
+        if (Y[i] != 'O'):
+            Y[i] += '-' + sentiment
     # print(Y)
     return Y
 
 
-def runPart3(type,obs_space, e_param, t_param, count):
-    dev_file = open(type+'/dev.in', 'r')
-    out_file = open(type+'/dev.p5.out', 'w')
+def runPart3(obs_space, e_param, t_param, count, dic_words):
+    dev_file = open('dev_EN.in', 'r')
+    out_file = open('dev_EN.p5.out', 'w')
     X = []
     for r in dev_file:
         r = r.strip()
         if (r == ''):
             # end of a sequence
-            Y = viterbiAlgo(X)
+            Y = viterbiAlgo(X, dic_words)
             for i in range(0, len(X)):
-                if Y[i] == 'O':
-                    out_file.write('' + X[i] + " " + Y[i] + '\n')
-                else:
-                    out_file.write('' + X[i] + " " + Y[i]+"-neutral" + '\n')
+                out_file.write('' + X[i] + " " + Y[i] + '\n')
             out_file.write('\n')
             X = []
         else:
             X.append(r)
 
 
-# for type in ["EN", "CN", "SG", "ES"]:
-for type in [ "ES_BIO"]:
-    print "Doing " + type
-    obs_space, e_param, t_param, count = train(type)
-    # runPart2(type,obs_space, e_param, count)
-    runPart3(type,obs_space, e_param, t_param, count)
-
+obs_space, e_param, t_param, count = train()
+dic_words = sentimentTrain()
+runPart3(obs_space, e_param, t_param, count, dic_words)
+print("finish!")
