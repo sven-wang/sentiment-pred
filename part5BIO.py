@@ -29,10 +29,10 @@ def train(type):
     u = 'START'
     obs_space = set()
 
-    for obs in train_file:
+    for line in train_file:
         try:
-            obs, v = obs.split()
-            obs = obs.strip()
+            obs, v = line.split()
+            obs = obs.strip().lower()
             v = v.strip()
             position = dic[v]  ## position: 1~7
             # update e_count
@@ -175,21 +175,70 @@ def viterbiAlgo(X):
     # print(Y)
     return Y
 
+def getPosNegWords():
+    posSet = set()
+    negSet = set()
+    pos_file = open("wordSent/" + "positive-words.txt", 'r')
+    neg_file = open("wordSent/" + "negative-words.txt", 'r')
+
+    for line in pos_file:
+        line = line.strip()
+        if line:
+            if line[0] != ';':
+                posSet.add(line)
+
+    for line in neg_file:
+        line = line.strip()
+        if line:
+            if line[0] != ';':
+                negSet.add(line)
+    # print (posSet)
+    # print (negSet)
+
+    return posSet, negSet
+
 
 def runPart3(type,obs_space, e_param, t_param, count):
     dev_file = open(type+'/dev.in', 'r')
     out_file = open(type+'/dev.p5.out', 'w')
     X = []
+
+    posSet, negSet = getPosNegWords()
+
     for r in dev_file:
-        r = r.strip()
+        r = r.strip().lower()
         if (r == ''):
             # end of a sequence
             Y = viterbiAlgo(X)
+
+            # check polar words in X sentence
+            isPos = False
+            isNeg = False
+            for word in X:
+                if word in posSet:
+                    isPos = True
+                    print ("PosWord: "+word)
+                if word in negSet:
+                    isPos = True
+
+            # ASSUMPTION: When POS and NEG both exist, the overal sentiment is POS
+            if isPos and isNeg:
+                sentiment = "-neutral"
+                print ('Both: '+' '.join(X))
+            elif isPos:
+                sentiment = "-positive"
+                print ('Pos: ' + ' '.join(X))
+            elif isNeg:
+                sentiment = "-negative"
+            else:
+                sentiment = "-neutral"
+
+
             for i in range(0, len(X)):
                 if Y[i] == 'O':
                     out_file.write('' + X[i] + " " + Y[i] + '\n')
                 else:
-                    out_file.write('' + X[i] + " " + Y[i]+"-neutral" + '\n')
+                    out_file.write('' + X[i] + " " + Y[i]+sentiment + '\n')
             out_file.write('\n')
             X = []
         else:
@@ -197,7 +246,7 @@ def runPart3(type,obs_space, e_param, t_param, count):
 
 
 # for type in ["EN", "CN", "SG", "ES"]:
-for type in [ "ES_BIO"]:
+for type in [ "EN_BIO"]:
     print "Doing " + type
     obs_space, e_param, t_param, count = train(type)
     # runPart2(type,obs_space, e_param, count)

@@ -17,3 +17,6 @@ printf "\n========== ES ============"
 python evalResult.py ES/dev.out ES/dev.p3.out
 printf "\n========== SG  ============"
 python evalResult.py SG/dev.out SG/dev.p3.out   
+
+printf "\n\n========== PART 5 ============"
+python evalResult.py EN_BIO/dev.out EN_BIO/dev.p5.out   
