@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae0d4fde-d1d9-4e15-addc-116c4c0b0019" name="Default" comment="part5BIO.py added wordSentList but F dropped to 0.19...">
+    <list default="true" id="ae0d4fde-d1d9-4e15-addc-116c4c0b0019" name="Default" comment="part">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part5NaiveApproach.ipynb" afterPath="$PROJECT_DIR$/part5NaiveApproach.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EN_BIO/dev.p5.out" afterPath="$PROJECT_DIR$/EN_BIO/dev.p5.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evalResult.py" afterPath="$PROJECT_DIR$/evalResult.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part5BIO.py" afterPath="$PROJECT_DIR$/part5BIO.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part5yujia.py" afterPath="$PROJECT_DIR$/part5yujia.py" />
     </list>
     <ignored path="sentiment-pred.iws" />
@@ -17,11 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sentiment-pred$part5BIO.coverage" NAME="part5BIO Coverage Results" MODIFIED="1480585016138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sentiment-pred$part5BIO.coverage" NAME="part5BIO Coverage Results" MODIFIED="1480604755216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sentiment-pred$viterbi.coverage" NAME="viterbi Coverage Results" MODIFIED="1480411210281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sentiment-pred$out2in.coverage" NAME="out2in Coverage Results" MODIFIED="1480411202478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EN_train" />
     <SUITE FILE_PATH="coverage/sentiment-pred$part4.coverage" NAME="part4 Coverage Results" MODIFIED="1480341537714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/sentiment-pred$part5yujia.coverage" NAME="part5yujia Coverage Results" MODIFIED="1480599627512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sentiment-pred$part5yujia.coverage" NAME="part5yujia Coverage Results" MODIFIED="1480602253261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sentiment-pred$tryIOB.coverage" NAME="tryIOB Coverage Results" MODIFIED="1480579771790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ES_BIO" />
     <SUITE FILE_PATH="coverage/sentiment-pred$tryIOB__1_.coverage" NAME="tryIOB (1) Coverage Results" MODIFIED="1480410436241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EN_BIO" />
   </component>
@@ -34,31 +36,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="part5BIO.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="part5BIO.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part5BIO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="552">
+              <caret line="281" column="39" selection-start-line="281" selection-start-column="39" selection-end-line="281" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="part5yujia.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dev.p5.out" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EN_BIO/dev.p5.out">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="139" column="12" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="part5yujia.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/part5yujia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+            <state relative-caret-position="227">
+              <caret line="93" column="46" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev.out" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EN_BIO/dev.out">
+      <file leaf-file-name="train_EN" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_EN">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1800">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="275">
+              <caret line="10418" column="5" selection-start-line="10418" selection-start-column="0" selection-end-line="10418" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -79,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/evalResult.py" />
         <option value="$PROJECT_DIR$/viterbi.py" />
         <option value="$PROJECT_DIR$/tryIOB.py" />
         <option value="$PROJECT_DIR$/EN/tryIOB.py" />
@@ -90,8 +101,10 @@
         <option value="$PROJECT_DIR$/EN_train/tryIOB.py" />
         <option value="$PROJECT_DIR$/part2&amp;3.py" />
         <option value="$PROJECT_DIR$/part5NaiveApproach.ipynb" />
-        <option value="$PROJECT_DIR$/part5BIO.py" />
+        <option value="$PROJECT_DIR$/train_EN" />
         <option value="$PROJECT_DIR$/part5yujia.py" />
+        <option value="$PROJECT_DIR$/evalResult.py" />
+        <option value="$PROJECT_DIR$/part5BIO.py" />
       </list>
     </option>
   </component>
@@ -310,7 +323,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Python.part5yujia">
+  <component name="RunManager" selected="Python.part5BIO">
     <configuration default="false" name="viterbi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -618,8 +631,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.part5yujia" />
-        <item index="1" class="java.lang.String" itemvalue="Python.part5BIO" />
+        <item index="0" class="java.lang.String" itemvalue="Python.part5BIO" />
+        <item index="1" class="java.lang.String" itemvalue="Python.part5yujia" />
         <item index="2" class="java.lang.String" itemvalue="Python.tryIOB" />
         <item index="3" class="java.lang.String" itemvalue="Python.viterbi" />
         <item index="4" class="java.lang.String" itemvalue="Python.out2in" />
@@ -728,7 +741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480585701488</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lowercased part5yujia.py =&gt; F:0.2224">
+      <created>1480599900759</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1480599900759</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -751,9 +771,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12574257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25940594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23267327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3158416" sideWeight="0.49781182" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27722773" sideWeight="0.49781182" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -807,20 +827,14 @@
     <MESSAGE value="tried out splitting train data to train and dev, score only 10-12 though" />
     <MESSAGE value="part5BIO.py F: 0.2" />
     <MESSAGE value="part5BIO.py added wordSentList but F dropped to 0.19..." />
-    <option name="LAST_COMMIT_MESSAGE" value="part5BIO.py added wordSentList but F dropped to 0.19..." />
+    <MESSAGE value="lowercased part5yujia.py =&gt; F:0.2224" />
+    <option name="LAST_COMMIT_MESSAGE" value="lowercased part5yujia.py =&gt; F:0.2224" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/part4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/part2&amp;3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2955">
@@ -894,13 +908,6 @@
     <entry file="file://$PROJECT_DIR$/0.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evalResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ES/dev.in">
@@ -1051,14 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_EN">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EN_BIO/tryIOB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1078,22 +1077,6 @@
     <entry file="file://$PROJECT_DIR$/ES_BIO/iob.train">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-630">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev.p5.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EN_BIO/dev.p5.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1131,14 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EN_BIO/dev.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/part5NaiveApproach.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -1146,18 +1121,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part5BIO.py">
+    <entry file="file://$PROJECT_DIR$/dev.p5.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_EN.p5.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="6493" column="0" selection-start-line="6493" selection-start-column="0" selection-end-line="6493" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evalResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="194" column="20" selection-start-line="194" selection-start-column="20" selection-end-line="194" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EN_BIO/dev.p5.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="139" column="12" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EN_BIO/dev.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="4257" column="16" selection-start-line="4257" selection-start-column="16" selection-end-line="4257" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_EN">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="10418" column="5" selection-start-line="10418" selection-start-column="0" selection-end-line="10418" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/part5yujia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+        <state relative-caret-position="227">
+          <caret line="93" column="46" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part5BIO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="281" column="39" selection-start-line="281" selection-start-column="39" selection-end-line="281" selection-end-column="39" />
           <folding />
         </state>
       </provider>

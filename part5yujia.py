@@ -2,6 +2,9 @@
 dic = {'START': 0, 'B': 1, 'I': 2, 'O': 3, 'STOP': 4}
 l = ['START', 'B', 'I', 'O', 'STOP']
 
+import pprint
+
+pp = pprint.PrettyPrinter(indent=4)
 
 def train():
     ############################# initialize parameter ####################################
@@ -87,7 +90,7 @@ def train():
 
 ################################# Naive Bayes Sentiment Analysis Train ############################
 dic_sentiment = {'negative': 0, 'neutral': 1, 'positive': 2}
-l_sentiment = ['nagative', 'neutral', 'positive']
+l_sentiment = ['negative', 'neutral', 'positive']
 not_set = set(['not', 'but', 'yet', 'any', 'no'])  ## for negation
 meaningless_set = set(['i', 'is', 'are', 'do', 'does', 'did', ',', 'a', '.', 'am', 'an', 'because'])  ## eliminate words
 
@@ -118,7 +121,7 @@ def sentimentTrain():
         except:
             # meaning the end of a sentence
             for w in X:
-                # assumption: any word's sentiment that appears after negation is the opposite of sentence sentiment
+                # TODO: ASSUMPTION: any word's sentiment that appears after negation is the opposite of sentence sentiment
                 if (w in not_set):
                     not_flag = not not_flag
                 if (not_flag):
@@ -138,7 +141,7 @@ def sentimentTrain():
             sentiment_score = 0
             not_flag = False
 
-    # print(dic_words)
+    pp.pprint(dic_words)
     return dic_words
 
 
@@ -223,7 +226,7 @@ def viterbiAlgo(X, dic_words):
         elif (w in dic_words):
             for i in range(0, 3):
                 sentiment_score[i] += dic_words[w][i]  # /(dic_words[w][0]+dic_words[w][1]+dic_words[w][2])
-
+    print (sentiment_score)
     max_sentiment = max(sentiment_score)
     sentiment = l_sentiment[sentiment_score.index(max_sentiment)]
     for i in range(0, len(Y)):

@@ -197,6 +197,8 @@ def compare_observed_to_predicted(observed, predicted):
                     #Entity & Sentiment both are matched
                     if span_sent == sent:
                         correct_sentiment += 1
+                    # else:
+                    #     print (span, observed_span)
 
     print()
     print('#Entity in gold data: %d' % (total_observed))
