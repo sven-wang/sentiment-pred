@@ -53,9 +53,9 @@ def train(type):
             else:
                 e_count[position][obs] = 1
 
-            # emission from current state to prev obs
-            if pre_position != "Xstart":
-                if (obs in e_count_back[position][prev_obs]):
+            # emission from current state to prev obs: position -> prev_obs
+            if prev_obs != "Xstart":
+                if (prev_obs in e_count_back[position]):
                     e_count_back[position][prev_obs] += 1
                 else:
                     e_count_back[position][prev_obs] = 1
@@ -65,7 +65,7 @@ def train(type):
             t_param[pre_position][position] += 1
             u = v
 
-            # emission from prev state to current obs
+            # emission from prev state to current obs: pre_position -> obs
             if pre_position!=0:
                 if (obs in e_count_fwd[pre_position]):
                     e_count_fwd[pre_position][obs]  += 1
@@ -77,6 +77,7 @@ def train(type):
             # add into train_obs_set
             if obs not in obs_space:
                 obs_space.add(obs)
+
             prev_obs = obs
 
         except:
@@ -103,22 +104,33 @@ def train(type):
             t_param[i][j] = 1.0 * t_param[i][j] / count[i]
     # print (t_param)
 
+
     # building emission params table: a list of 4 dicts, each dict has all obs as keys,
     # value is 0 if obs never appears for this state
 
     for i in range(1,4): # state 1-3
         for obs in obs_space:
             if obs not in e_count[i]:
-                e_param[i][obs] = 0.01 / max(count) ## ???????????????????????????????????????????????????????????????????????????????????????? whether should be 0?? or lowest prob of all
-                e_param_back[i][obs] = 0.01 / max(count)
-                e_param_fwd[i][obs] = 0.01 / max(count)
+                e_param[i][obs] = 0 #0.01 / max(count) ## ???????????????????????????????????????????????????????????????????????????????????????? whether should be 0?? or lowest prob of all
             else:
                 e_param[i][obs] = 1.0 * e_count[i][obs] / count[i]
+            if obs not in e_count_back[i]:
+                e_param_back[i][obs] = 0  # 0.01 / max(count)
+            else:
                 e_param_back[i][obs] = 1.0 * e_count_back[i][obs] / count[i]
+
+
+            if obs not in e_count_fwd[i]:
+                e_param_fwd[i][obs] = 0  # 0.01 / max(count)
+            else:
                 e_param_fwd[i][obs] = 1.0 * e_count_fwd[i][obs] / count[i]
+
         # for convenience later
         e_param_fwd[i]["Xstop"] = 1
         e_param_back[i]["Xstart"] = 1
+
+
+
 
     return obs_space, e_param, t_param, count, e_param_back, e_param_fwd
 
@@ -274,8 +286,8 @@ def runPart3(type,obs_space, e_param, t_param, count):
     globalWeight = 0.5
 
 
-    pp.pprint(effPosSet)
-    pp.pprint(effNegSet)
+    # pp.pprint(effPosSet)
+    # pp.pprint(effNegSet)
 
 
     for r in dev_file:
