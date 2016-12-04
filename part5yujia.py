@@ -6,6 +6,7 @@ import pprint
 
 pp = pprint.PrettyPrinter(indent=4)
 
+
 def train():
     ############################# initialize parameter ####################################
 
@@ -37,6 +38,11 @@ def train():
             v = v.strip()
             v = v[0]  ## get BIO
             position = dic[v]  ## position: 1~7
+
+            # preprocessing of some special cases:
+            if obs[:7] == 'http://':
+                obs = 'http://'
+
             # update e_count
             if (obs in e_count[position]):
                 e_count[position][obs] += 1
@@ -80,7 +86,8 @@ def train():
     for i in range(1, 4):  # state 1-7
         for obs in obs_space:
             if obs not in e_count[i]:
-                e_param[i][obs] = 0.01 / max(count)  ## ?????????????????????????????????????????????????????????????????????????????????????? the magic emmision coefficient
+                e_param[i][obs] = 0.01 / max(
+                    count)  ## ???????????????????????????????????????????????????????????????????????????????????????? whether should be 0?? or lowest prob of all
             else:
                 e_param[i][obs] = 1.0 * e_count[i][obs] / count[i]
 
@@ -120,9 +127,9 @@ def sentimentTrain():
         except:
             # meaning the end of a sentence
             for w in X:
-                # TODO: ASSUMPTION: any word's sentiment that appears after negation is the opposite of sentence sentiment
-                if (w in not_set):
-                    not_flag = not not_flag
+                # assumption: any word's sentiment that appears after negation is the opposite of sentence sentiment
+                # if (w in not_set):
+                #   not_flag = not not_flag
                 if (not_flag):
                     sentiment_score *= -1
                 # fill up the dic
@@ -140,7 +147,7 @@ def sentimentTrain():
             sentiment_score = 0
             not_flag = False
 
-    pp.pprint(dic_words)
+    # print(dic_words)
     return dic_words
 
 
@@ -217,15 +224,15 @@ def viterbiAlgo(X, dic_words):
 
     for w in X:
         w = w.lower()
-        if (w in not_set):
-            not_flag = not not_flag
+        # if (w in not_set):
+        #   not_flag = not not_flag
         if (not_flag & (w in dic_words)):
             for i in range(0, 3):
                 sentiment_score[i] -= dic_words[w][i]  # /(dic_words[w][0]+dic_words[w][1]+dic_words[w][2])
         elif (w in dic_words):
             for i in range(0, 3):
                 sentiment_score[i] += dic_words[w][i]  # /(dic_words[w][0]+dic_words[w][1]+dic_words[w][2])
-    print (sentiment_score)
+
     max_sentiment = max(sentiment_score)
     sentiment = l_sentiment[sentiment_score.index(max_sentiment)]
     for i in range(0, len(Y)):
@@ -237,7 +244,7 @@ def viterbiAlgo(X, dic_words):
 
 def runPart3(obs_space, e_param, t_param, count, dic_words):
     dev_file = open('dev_EN.in', 'r')
-    out_file = open('dev_EN.p5.out', 'w')
+    out_file = open('dev_EN.p5_noNegation.out', 'w')
     X = []
     for r in dev_file:
         r = r.strip().lower()
@@ -250,6 +257,9 @@ def runPart3(obs_space, e_param, t_param, count, dic_words):
             out_file.write('\n')
             X = []
         else:
+            # preprocessing of some special cases:
+            if r[:7] == 'http://':
+                r = 'http://'
             X.append(r)
 
 

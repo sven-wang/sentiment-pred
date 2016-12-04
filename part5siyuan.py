@@ -35,7 +35,11 @@ def train(type):
             obs, v = line.split()
             obs = obs.strip().lower()
             v = v.strip()
-            position = dic[v]  ## position: 1~7
+            position = dic[v]  ## position: 1~3
+
+            # preprocessing of some special cases:
+            if obs[:7]=='http://':
+                obs = 'http://'
             # update e_count
             if (obs in e_count[position]):
                 e_count[position][obs] += 1
@@ -77,12 +81,15 @@ def train(type):
     # building emission params table: a list of 4 dicts, each dict has all obs as keys,
     # value is 0 if obs never appears for this state
 
-    for i in range(1,4): # state 1-7
+    for i in range(1,4): # state 1-3
         for obs in obs_space:
             if obs not in e_count[i]:
                 e_param[i][obs] = 0.01 / max(count) ## ???????????????????????????????????????????????????????????????????????????????????????? whether should be 0?? or lowest prob of all
             else:
                 e_param[i][obs] = 1.0 * e_count[i][obs] / count[i]
+
+
+
 
     return obs_space, e_param, t_param, count
 
@@ -244,7 +251,7 @@ def getEffectivePosNegWords():
 
 def runPart3(type,obs_space, e_param, t_param, count):
     dev_file = open(type+'/dev.in', 'r')
-    out_file = open(type+'/dev.p5.wGloabl.out', 'w')
+    out_file = open(type+'/dev.p5.out', 'w')
     X = []
 
     effPosSet, effNegSet = getEffectivePosNegWords()
@@ -271,14 +278,14 @@ def runPart3(type,obs_space, e_param, t_param, count):
                 if word in effPosSet:
                     isPos += effPosSet[word]
                     # print ("PosWord: "+word)
-                elif word in globalPosSet:
-                    isPos += globalWeight
+                # elif word in globalPosSet:
+                #     isPos += globalWeight
 
                 if word in effNegSet:
                     isNeg += effNegSet[word]
                     # print ("NegWord: " + word)
-                elif word in globalNegSet:
-                    isNeg += globalWeight
+                # elif word in globalNegSet:
+                #     isNeg += globalWeight
                 if word in negationWords:
                     negation_flag = True
 
@@ -286,16 +293,17 @@ def runPart3(type,obs_space, e_param, t_param, count):
             # if negation_flag:
             #     polarity = -polarity
 
-            if polarity > 0:
+            if polarity > 1:
                 sentiment = "-positive"
                 # print ('Pos: ' + ' '.join(X))
-            elif polarity < 0:
+            elif polarity < -1:
                 sentiment = "-negative"
                 # print ('Neg: ' + ' '.join(X))
             else:
                 sentiment = "-neutral"
 
-
+            # hardcode sentiment to -neutral
+            sentiment = "-neutral"
             for i in range(0, len(X)):
                 if Y[i] == 'O':
                     out_file.write('' + X[i] + " " + Y[i] + '\n')
@@ -304,6 +312,9 @@ def runPart3(type,obs_space, e_param, t_param, count):
             out_file.write('\n')
             X = []
         else:
+            # preprocessing of some special cases:
+            if r[:7]=='http://':
+                r = 'http://'
             X.append(r)
 
 
