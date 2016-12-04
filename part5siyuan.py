@@ -4,6 +4,7 @@ pp = pprint.PrettyPrinter(indent=5)
 # for quick access, to get the location of each sentiment in the dictionary
 dic = {'START': 0, 'B': 1, 'I': 2, 'O': 3, 'STOP': 4}
 l = ['START', 'B', 'I', 'O', 'STOP']
+negationWords = {'not', 'no'}
 
 def train(type):
     ############################# initialize parameter ####################################
@@ -220,16 +221,16 @@ def getEffectivePosNegWords():
                 sentiment_score += dic_sentiment[v.split('-')[1]] - 1
         except:
             # meaning the end of a sentence
-            for w in X:
-                # fill up the dic
-                # get sentiment position first:
-                if (sentiment_score > 0):
+            if (sentiment_score > 0):
+                for w in X:
                     if w in posSet:
                         if w in effectivePosDict:
                             effectivePosDict[w] += 1
                         else:
                             effectivePosDict[w] = 1
-                elif (sentiment_score < 0):
+
+            elif (sentiment_score < 0):
+                for w in X:
                     if w in negSet:
                         if w in effectiveNegDict:
                             effectiveNegDict[w] += 1
@@ -243,15 +244,17 @@ def getEffectivePosNegWords():
 
 def runPart3(type,obs_space, e_param, t_param, count):
     dev_file = open(type+'/dev.in', 'r')
-    out_file = open(type+'/dev.p5.out', 'w')
+    out_file = open(type+'/dev.p5.wGloabl.out', 'w')
     X = []
 
-    posSet, negSet = getEffectivePosNegWords()
+    effPosSet, effNegSet = getEffectivePosNegWords()
+    globalPosSet, globalNegSet = getGlobalPosNegWords()
+    globalWeight = 0.5
 
-    pp.pprint(posSet)
-    pp.pprint(negSet)
 
-    negationWords = {'not', 'no'}
+    pp.pprint(effPosSet)
+    pp.pprint(effNegSet)
+
 
     for r in dev_file:
         r = r.strip().lower()
@@ -265,12 +268,17 @@ def runPart3(type,obs_space, e_param, t_param, count):
             isNeg = 0
             negation_flag = False
             for word in X:
-                if word in posSet:
-                    isPos += posSet[word]
+                if word in effPosSet:
+                    isPos += effPosSet[word]
                     # print ("PosWord: "+word)
-                if word in negSet:
-                    isNeg += negSet[word]
+                elif word in globalPosSet:
+                    isPos += globalWeight
+
+                if word in effNegSet:
+                    isNeg += effNegSet[word]
                     # print ("NegWord: " + word)
+                elif word in globalNegSet:
+                    isNeg += globalWeight
                 if word in negationWords:
                     negation_flag = True
 

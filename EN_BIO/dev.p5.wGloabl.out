@@ -41,9 +41,9 @@ in O
 the O
 company O
 of O
-wolves B-neutral
-( I-neutral
-hq I-neutral
+wolves B-positive
+( I-positive
+hq I-positive
 live O
 ) O
 
@@ -58,10 +58,10 @@ it O
 at O
 http://t.co/bgfcqmwq O
 
-@gpradeesh B-negative
-@thirumarant I-negative
-@rajarath I-negative
-@rajanleaks I-negative
+@gpradeesh B-positive
+@thirumarant I-positive
+@rajarath I-positive
+@rajanleaks I-positive
 any O
 recommendation O
 for O
@@ -70,9 +70,9 @@ application O
 ? O
 suggestion O
 for O
-tamil B-negative
-twitter B-negative
-software I-negative
+tamil B-positive
+twitter B-positive
+software I-positive
 . O
 
 @surrusty B-neutral
@@ -187,13 +187,13 @@ prison O
 transfer O
 deal O
 : O
-oversight B-neutral
-of I-neutral
-main I-neutral
+oversight B-negative
+of I-negative
+main I-negative
 u.s O
 . O
-detention B-neutral
-center I-neutral
+detention B-negative
+center I-negative
 to O
 be O
 handed O
@@ -231,9 +231,9 @@ rescue O
 - O
 but O
 manchester O
-united's B-neutral
-endless I-neutral
-desire I-neutral
+united's B-positive
+endless I-positive
+desire I-positive
 to O
 win O
 means O
@@ -262,11 +262,11 @@ approach O
 a O
 girl O
 and O
-attain B-neutral
-90 I-neutral
+attain B-positive
+90 I-positive
 % O
-positive B-neutral
-outcome I-neutral
+positive B-positive
+outcome I-positive
 ! O
 : O
 by O
@@ -274,15 +274,15 @@ cliff106 O
 ... O
 http://bit.ly/cn3ig7 O
 
-reggie B-neutral
-bush I-neutral
+reggie B-negative
+bush I-negative
 needs O
 to O
 kill O
 off O
 those O
-orange B-neutral
-gloves I-neutral
+orange B-negative
+gloves I-negative
 . O
 #ugly O
 
@@ -297,9 +297,9 @@ warning O
 about O
 f1 O
 traffic O
-disruptions B-neutral
-. I-neutral
-suntec I-neutral
+disruptions B-positive
+. I-positive
+suntec I-positive
 is O
 open O
 & O
@@ -307,16 +307,16 @@ found O
 a O
 seat O
 at O
-kenny B-neutral
-rogers I-neutral
+kenny B-positive
+rogers I-positive
 for O
 the O
 first O
 time O
 ! O
 
-whitney B-neutral
-houston I-neutral
+whitney B-positive
+houston I-positive
 fans O
 to O
 follow O
@@ -330,7 +330,7 @@ still O
 half O
 clueless O
 about O
-twitter B-neutral
+twitter B-negative
 haha O
 
 twitter B-neutral
@@ -388,7 +388,7 @@ is O
 ~maxim O
 gorky O
 
-sogurt B-neutral
+sogurt B-positive
 @ O
 bt O
 will O
@@ -428,12 +428,12 @@ up O
 making O
 the O
 whole O
-world B-neutral
-blind I-neutral
+world B-negative
+blind I-negative
 . O
 Ã¢ÂÂ O
-mohatma B-neutral
-gandhi I-neutral
+mohatma B-negative
+gandhi I-negative
 . O
 
 another O
@@ -442,17 +442,17 @@ item O
 from O
 straightsilverinc O
 on O
-ebay B-neutral
+ebay B-positive
 http://www.froo.co/2eqzryf00s O
 
-aliens B-neutral
+aliens B-positive
 are O
 very O
 curious O
 about O
 the O
-chevy B-neutral
-volt I-neutral
+chevy B-positive
+volt I-positive
 in O
 the O
 manufacturer's O
@@ -475,7 +475,7 @@ youth O
 : O
 http://www.mideastyouth.com/2010/08/21/pirates-in-iraqi-waters/ O
 
-@dramjj B-neutral
+@dramjj B-positive
 i O
 wish O
 bahrain O
@@ -503,8 +503,8 @@ very O
 nice O
 country O
 
-jessore B-neutral
-bnp I-neutral
+jessore B-negative
+bnp I-negative
 leader O
 killed O
 in O
@@ -513,8 +513,8 @@ gazipur O
 jessore O
 : O
 a O
-bnp B-neutral
-upazila I-neutral
+bnp B-negative
+upazila I-negative
 unit O
 leader O
 was O
@@ -528,14 +528,14 @@ the O
 ... O
 http://t.co/heypueln O
 
-http://t.co/gcfmndv5 B-neutral
-barrack I-neutral
-obama I-neutral
+http://t.co/gcfmndv5 B-negative
+barrack I-negative
+obama I-negative
 died O
 in O
 a O
-horrible B-neutral
-airplane I-neutral
+horrible B-negative
+airplane I-negative
 crash O
 ! O
 no O
@@ -563,9 +563,9 @@ cont O
 ) O
 http://t.co/slanhfb8 O
 
-@nirvanaelhaddad B-neutral
-thermal I-neutral
-properties I-neutral
+@nirvanaelhaddad B-positive
+thermal I-positive
+properties I-positive
 , O
 like O
 "the O
@@ -580,12 +580,12 @@ internet O
 ! O
 "north O
 face O
-outdoor B-neutral
-clothes" I-neutral
+outdoor B-positive
+clothes" I-positive
 ! O
 
-@srbachchan B-positive
-"amitabh I-positive
+@srbachchan B-neutral
+"amitabh I-neutral
 is O
 my O
 younger O
@@ -612,9 +612,9 @@ the O
 school O
 centre O
 of O
-the B-neutral
-state I-neutral
-hermitage I-neutral
+the B-positive
+state I-positive
+hermitage I-positive
 . O
 
 englewood O
@@ -629,12 +629,12 @@ $ O
 899 O
 http://t.co/s9cie1qr O
 
-http://t.co/yvgmgoud B-neutral
-forex I-neutral
+http://t.co/yvgmgoud B-negative
+forex I-negative
 system O
-forex B-neutral
-strategy I-neutral
-outlook I-neutral
+forex B-negative
+strategy I-negative
+outlook I-negative
 : O
 euro O
 volatility O
@@ -671,7 +671,7 @@ http://t.co/3web76hv O
 
 i O
 love O
-dropbox B-neutral
+dropbox B-positive
 because O
 i O
 can O
@@ -709,7 +709,7 @@ by O
 becoming O
 more O
 . O
-tony B-neutral
+tony B-positive
 robbins O
 
 apple B-neutral
@@ -737,15 +737,15 @@ other O
 ... O
 http://t.co/ijnu8cnq O
 
-howard B-neutral
-alan I-neutral
+howard B-positive
+alan I-positive
 events O
 presents O
 nationally O
 ranked O
-las B-neutral
-olas I-neutral
-art I-neutral
+las B-positive
+olas I-positive
+art I-positive
 fair O
 on O
 march O
@@ -754,10 +754,10 @@ march O
 4 O
 http://t.co/ldlxh0ve O
 
-taylor B-neutral
-swift I-neutral
-wears I-neutral
-stripy I-neutral
+taylor B-positive
+swift I-positive
+wears I-positive
+stripy I-positive
 bikini O
 on O
 the O
@@ -805,7 +805,7 @@ it O
 . O
 http://www.socialoomph.com/92987.html O
 
-"mike" B-neutral
+"mike" B-negative
 update O
 : O
 it O
@@ -816,9 +816,9 @@ since O
 i O
 spoke O
 of O
-my B-neutral
-friend I-neutral
-"mike" I-neutral
+my B-negative
+friend I-negative
+"mike" I-negative
 . O
 Â O
 things O
@@ -832,7 +832,7 @@ sin O
 ... O
 http://bit.ly/azic6h O
 
-madonna B-neutral
+madonna B-positive
 super O
 bowl O
 half O
@@ -862,7 +862,7 @@ solar O
 ... O
 http://t.co/uep3x5mc O
 
-http://bit.ly/do0ycg B-neutral
+http://bit.ly/do0ycg B-positive
 ! O
 kingston O
 technology O
@@ -910,22 +910,22 @@ tie O
 series O
 http://t.co/tsisclky O
 
-house B-neutral
-defeats I-neutral
-amendment I-neutral
+house B-positive
+defeats I-positive
+amendment I-positive
 to O
-drop B-neutral
-dns I-neutral
-blocking I-neutral
+drop B-positive
+dns I-positive
+blocking I-positive
 from O
 stop O
 online O
 piracy O
 act O
 : O
-the B-neutral
-house I-neutral
-judiciary I-neutral
+the B-positive
+house I-positive
+judiciary I-positive
 committee O
 defeated O
 ... O
@@ -952,8 +952,8 @@ and O
 a O
 hell O
 of O
-heaven." B-neutral
-~john I-neutral
+heaven." B-negative
+~john I-negative
 milton O
 
 t-mobile B-neutral
@@ -972,7 +972,7 @@ http://t.co/oedy9und O
 
 someone O
 at O
-apple B-neutral
+apple B-negative
 lost O
 their O
 prototype O
@@ -985,8 +985,8 @@ disassembled O
 it O
 examined O
 it O
-http://ow.ly/1ajmh B-neutral
-#apple I-neutral
+http://ow.ly/1ajmh B-negative
+#apple I-negative
 #iphone O
 
 we O
@@ -1005,23 +1005,23 @@ interesting O
 jobs O
 . O
 contact O
-mark B-neutral
-foster B-neutral
+mark B-positive
+foster B-positive
 : O
 mark@dutchgeo.com O
 
-mayor B-neutral
+mayor B-positive
 of O
 los O
 angeles O
-endorses B-neutral
-marriage I-neutral
-equality I-neutral
+endorses B-positive
+marriage I-positive
+equality I-positive
 as O
 a O
-democratic B-neutral
-party I-neutral
-plank I-neutral
+democratic B-positive
+party I-positive
+plank I-positive
 http://t.co/dlzxxskq O
 
 what's O
@@ -1060,15 +1060,15 @@ iaf O
 http://bit.ly/dkuk5a O
 
 tech O
-rewar B-neutral
-d: I-neutral
-consumer I-neutral
+rewar B-positive
+d: I-positive
+consumer I-positive
 new O
 s: O
 get O
 a O
 free O
-apple B-neutral
+apple B-positive
 iphone O
 4 O
 ! O
@@ -1101,7 +1101,7 @@ him O
 ? O
 " O
 
-@omardemoya B-neutral
+@omardemoya B-positive
 thank O
 you O
 very O
@@ -1118,8 +1118,8 @@ it O
 http://t.co/nhkhfjz O
 
 ( O
-http://t.co/mo0clj2p) B-neutral
-texans' I-neutral
+http://t.co/mo0clj2p) B-negative
+texans' I-negative
 first O
 playoff O
 season O
@@ -1200,8 +1200,8 @@ review O
 the O
 town O
 , O
-ben B-neutral
-affleck I-neutral
+ben B-negative
+affleck I-negative
 --&gt O
 ; O
 http://ow.ly/2jhg2 O
@@ -1212,8 +1212,8 @@ critics O
 updated O
 . O
 meet O
-andy B-neutral
-hughes I-neutral
+andy B-negative
+hughes I-negative
 --&gt O
 ; O
 http://ow.ly/2jhg3 O
@@ -1262,8 +1262,8 @@ fucking O
 steelers O
 !! O
 
-uncovering B-neutral
-asu's I-neutral
+uncovering B-positive
+asu's I-positive
 solar O
 success O
 story O
@@ -1273,8 +1273,8 @@ officials O
 , O
 pleased O
 with O
-arizona B-neutral
-state's I-neutral
+arizona B-positive
+state's I-positive
 growing O
 solar O
 portfolio O
@@ -1284,11 +1284,11 @@ en O
 http://t.co/pe7fmzmk O
 
 is O
-antonia B-neutral
-maino I-neutral
-aka I-neutral
-sonia B-neutral
-gandhi I-neutral
+antonia B-negative
+maino I-negative
+aka I-negative
+sonia B-negative
+gandhi I-negative
 really O
 to O
 blame O
@@ -1361,14 +1361,14 @@ the O
 app O
 is O
 location O
-aware B-negative
-. I-negative
-instagram I-negative
+aware B-positive
+. I-positive
+instagram I-positive
 will O
 use O
 e O
-geolocation B-negative
-data I-negative
+geolocation B-positive
+data I-positive
 . O
 
 how O
@@ -1403,8 +1403,8 @@ via O
 @twitpic O
 
 american O
-whole B-neutral
-foods I-neutral
+whole B-positive
+foods I-positive
 market O
 is O
 like O
@@ -1424,17 +1424,17 @@ is O
 education O
 . O
 â O
-â B-neutral
-liza I-neutral
-mundy I-neutral
+â B-negative
+liza I-negative
+mundy I-negative
 , O
 
 the O
 end O
 of O
-chrysler's B-neutral
-smooth I-neutral
-roa I-neutral
+chrysler's B-positive
+smooth I-positive
+roa I-positive
 d: O
 the O
 recent O
@@ -1456,9 +1456,9 @@ in O
 ... O
 http://t.co/rne0s6gl O
 
-@amala_ams B-neutral
-vikatan I-neutral
-cover I-neutral
+@amala_ams B-positive
+vikatan I-positive
+cover I-positive
 awesome O
 cant O
 sleep O
@@ -1468,15 +1468,15 @@ can O
 i O
 do O
 
-russell B-neutral
+russell B-negative
 your O
 fucking O
-retarded B-neutral
-xddd I-neutral
+retarded B-negative
+xddd I-negative
 â O
-retar B-neutral
-d: I-neutral
-propane I-neutral
+retar B-negative
+d: I-negative
+propane I-negative
 is O
 russellered O
 http://4ms.me/e5ze3x O
@@ -1534,8 +1534,8 @@ and O
 memory O
 . O
 r.i.p O
-whitney B-neutral
-houston I-neutral
+whitney B-positive
+houston I-positive
 . O
 
 i O
@@ -1570,8 +1570,8 @@ lives O
 on O
 . O
 - O
-john B-positive
-f I-positive
+john B-negative
+f I-negative
 . O
 kennedy O
 
@@ -1587,8 +1587,8 @@ on O
 myspace O
 http://lnk.ms/lprf2 O
 
-#becauseoffacebook B-neutral
-revolutions I-neutral
+#becauseoffacebook B-negative
+revolutions I-negative
 in O
 the O
 mideast O
@@ -1643,7 +1643,7 @@ zon O
 jb O
 http://4sq.com/hakss6 O
 
-@xe05 B-neutral
+@xe05 B-positive
 support O
 our O
 nus O
@@ -1675,16 +1675,16 @@ world's O
 best O
 whiskies O
 - O
-750 B-neutral
-unmissable I-neutral
-drams I-neutral
+750 B-positive
+unmissable I-positive
+drams I-positive
 from O
 tennessee O
 to O
 tokyo O
 - O
-dominic B-neutral
-roskrow I-neutral
+dominic B-positive
+roskrow I-positive
 http://t.co/mpdieska O
 
 i O
@@ -1703,9 +1703,9 @@ print O
 http://t.co/lhahdmez O
 
 change O
-facebook B-neutral
-password I-neutral
-immediately I-neutral
+facebook B-positive
+password I-positive
+immediately I-positive
 because O
 you're O
 logged O
@@ -1749,8 +1749,8 @@ like O
 kanuda O
 had O
 to O
-commit B-neutral
-suicide I-neutral
+commit B-positive
+suicide I-positive
 at O
 the O
 age O
@@ -1812,9 +1812,9 @@ ds: O
 | O
 travel O
 - O
-adventure B-neutral
-travel I-neutral
-news I-neutral
+adventure B-negative
+travel I-negative
+news I-negative
 ... O
 http://t.co/ingaje2c O
 
@@ -1856,7 +1856,7 @@ me O
 !! O
 @omeribrahim11 O
 
-dan B-neutral
+dan B-positive
 had O
 a O
 great O
@@ -1879,7 +1879,7 @@ service O
 spon O
 http://tinyurl.com/2d2sa6h O
 
-@menaelanssary B-positive
+@menaelanssary B-neutral
 just O
 finish O
 installation O
@@ -1913,12 +1913,12 @@ listening O
 to O
 @smashingpumpkin O
 on O
-bbc B-neutral
-radio I-neutral
+bbc B-positive
+radio I-positive
 1 O
 , O
-sd B-neutral
-truly I-neutral
+sd B-positive
+truly I-positive
 is O
 a O
 masterpiece O
@@ -1926,20 +1926,20 @@ masterpiece O
 
 we've O
 ( O
-slightly B-neutral
-belatedly I-neutral
+slightly B-positive
+belatedly I-positive
 ) O
 made O
 use O
 of O
-youtube's B-neutral
-improved I-neutral
-design I-neutral
+youtube's B-positive
+improved I-positive
+design I-positive
 and O
 functionality O
 : O
-http://t.co/kcaunjuj B-neutral
-#engineering I-neutral
+http://t.co/kcaunjuj B-positive
+#engineering I-positive
 #cavotec O
 
 i've O
@@ -2019,12 +2019,12 @@ it O
 â O
 " O
 
-facebook B-neutral
-timeline I-neutral
+facebook B-positive
+timeline I-positive
 : O
 10 O
-stunning B-neutral
-designs I-neutral
+stunning B-positive
+designs I-positive
 [ O
 pics O
 ] O
@@ -2045,8 +2045,8 @@ petition O
 @avaaz O
 urging O
 the O
-eu B-neutral
-parliament B-neutral
+eu B-negative
+parliament B-negative
 to O
 reject O
 # O
@@ -2054,15 +2054,15 @@ acta O
 : O
 http://t.co/xlopgidu O
 
-wordpress B-neutral
-frugal I-neutral
-theme I-neutral
-coupon I-neutral
-code I-neutral
+wordpress B-positive
+frugal I-positive
+theme I-positive
+coupon I-positive
+code I-positive
 : O
 special O
-frugal B-neutral
-theme I-neutral
+frugal B-positive
+theme I-positive
 discount O
 : O
 save O
@@ -2070,10 +2070,10 @@ money O
 with O
 our O
 new O
-valid B-neutral
-frugal I-neutral
-theme I-neutral
-coup I-neutral
+valid B-positive
+frugal I-positive
+theme I-positive
+coup I-positive
 ... O
 http://bit.ly/9iwpzb O
 
@@ -2103,7 +2103,7 @@ for O
 ... O
 http://t.co/1u9kjdno O
 
-@msamberpriley B-neutral
+@msamberpriley B-positive
 i O
 love O
 you O
@@ -2237,7 +2237,7 @@ proposal O
 ? O
 
 the O
-facebook B-neutral
+facebook B-positive
 easy O
 cash O
 guide O
@@ -2266,9 +2266,9 @@ gold O
 & O
 silver O
 : O
-10-year B-neutral
-dow I-neutral
-jones B-neutral
+10-year B-positive
+dow I-positive
+jones B-positive
 = O
 +6 O
 % O
@@ -2286,7 +2286,7 @@ silver O
 % O
 http://bit.ly/9xdgv4 O
 
-tommorrow B-neutral
+tommorrow B-positive
 is O
 my O
 final O
@@ -2323,7 +2323,7 @@ to O
 , O
 @armanmf9 O
 's O
-klout B-neutral
+klout B-positive
 score O
 is O
 10 O
@@ -2335,13 +2335,13 @@ you O
 ? O
 http://t.co/vipgb9i O
 
-nedbank B-neutral
+nedbank B-positive
 , O
 standard O
 bank O
 : O
-worst-performing B-neutral
-bank I-neutral
+worst-performing B-positive
+bank I-positive
 shares O
 . O
 capitec O
@@ -2353,9 +2353,9 @@ expected O
 http://is.gd/kdojt O
 
 http://t.co/lsmozsxl O
-roundu B-neutral
-p: I-neutral
-hartnell I-neutral
+roundu B-negative
+p: I-negative
+hartnell I-negative
 baseball O
 loses O
 conference O
@@ -2423,10 +2423,10 @@ vÃÂ­a O
 job O
 opportunity O
 : O
-sr B-neutral
-. I-neutral
-software I-neutral
-engineer I-neutral
+sr B-positive
+. I-positive
+software I-positive
+engineer I-positive
 ( O
 mac O
 ) O
@@ -2434,14 +2434,14 @@ mac O
 cool O
 gad O
 at O
-mark/space B-neutral
-, I-neutral
-inc I-neutral
+mark/space B-positive
+, I-positive
+inc I-positive
 . O
 - O
-san B-neutral
-francisco I-neutral
-bay I-neutral
+san B-positive
+francisco I-positive
+bay I-positive
 area O
 #jobs O
 http://t.co/xg2psp5b O
@@ -2487,8 +2487,8 @@ is O
 pouring O
 down O
 and O
-hernendez B-neutral
-denied I-neutral
+hernendez B-negative
+denied I-negative
 a O
 penalty O
 . O
@@ -2526,7 +2526,7 @@ flamboyant I-neutral
 ... O
 http://t.co/2r7cw3at O
 
-blackhawks B-neutral
+blackhawks B-negative
 bring O
 in O
 center O
@@ -2534,7 +2534,7 @@ kruger O
 from O
 sweden O
 - O
-chicago B-neutral
+chicago B-negative
 breaking O
 ... O
 http://bit.ly/hwksyq O
@@ -2581,8 +2581,8 @@ is O
 http://bit.ly/bdyqib O
 
 what O
-shiv B-neutral
-sena I-neutral
+shiv B-positive
+sena I-positive
 is O
 doing O
 is O
@@ -2594,10 +2594,10 @@ one O
 is O
 greater O
 than O
-country's B-neutral
-honour I-neutral
-. I-neutral
-srk I-neutral
+country's B-positive
+honour I-positive
+. I-positive
+srk I-positive
 this O
 is O
 not O
@@ -2605,8 +2605,8 @@ y'r O
 film O
 so O
 plz O
-shut B-neutral
-y'r I-neutral
+shut B-positive
+y'r I-positive
 mth O
 
 bad O
@@ -2715,13 +2715,13 @@ you O
 tanya O
 . O
 
-ubs B-neutral
+ubs B-negative
 profits O
 beat O
 forecasts O
 despite O
-scandal B-neutral
-http://t.co/b9iz8bgg I-neutral
+scandal B-negative
+http://t.co/b9iz8bgg I-negative
 2 O
 ! O
 
@@ -2777,13 +2777,13 @@ it O
 ahmed O
 ? O
 
-target B-neutral
+target B-positive
 selling O
 the O
 ipad O
 cheaper O
 than O
-apple B-neutral
+apple B-positive
 : O
 vintage O
 wedding O
@@ -2840,8 +2840,8 @@ booth O
 . O
 go O
 the O
-internationals B-neutral
-especially I-neutral
+internationals B-positive
+especially I-positive
 our O
 local O
 qld O
@@ -2884,7 +2884,7 @@ charlotte O
 observer O
 http://t.co/gzcmuuj5 O
 
-amazon B-neutral
+amazon B-positive
 bought O
 woot.com O
 i O
@@ -2903,15 +2903,15 @@ morning O
 http://bit.ly/bcifzj O
 
 any O
-dell B-negative
+dell B-positive
 fans O
 watching O
 the O
 new O
 season O
 of O
-bachelor B-negative
-pad I-negative
+bachelor B-positive
+pad I-positive
 ? O
 what O
 are O
@@ -2932,20 +2932,20 @@ command O
 . O
 http://bit.ly/d7ovuw O
 
-new B-neutral
-england I-neutral
-tunershops I-neutral
+new B-negative
+england I-negative
+tunershops I-negative
 page O
 2 O
-subaru B-neutral
-impreza I-neutral
-wrx I-neutral
+subaru B-negative
+impreza I-negative
+wrx I-negative
 sti O
-forums B-neutral
-iwsticom I-neutral
+forums B-negative
+iwsticom I-negative
 : O
-xx B-neutral
-tuning I-neutral
+xx B-negative
+tuning I-negative
 is O
 old O
 and O
@@ -2966,7 +2966,7 @@ of O
 button I-neutral
 http://ow.ly/5odxe O
 
-@khadijahafeji B-negative
+@khadijahafeji B-positive
 all O
 r O
 doing O
@@ -3045,10 +3045,10 @@ stocks O
 last O
 ! O
 
-marble B-negative
-homes I-negative
-hua I-negative
-hin I-negative
+marble B-positive
+homes I-positive
+hua I-positive
+hin I-positive
 thailand O
 , O
 100 O
@@ -3056,18 +3056,18 @@ thailand O
 finance O
 , O
 no O
-deposit B-negative
-www.search-realestate-thailand.com I-negative
+deposit B-positive
+www.search-realestate-thailand.com I-positive
 new O
 property O
 best O
 buy O
 ! O
 
-windows B-neutral
+windows B-positive
 7 O
-perfection B-neutral
-netbook I-neutral
+perfection B-positive
+netbook I-positive
 edition O
 x86 O
 http://goo.gl/fb/0h4o7 O
@@ -3121,9 +3121,9 @@ http://t.co/ono0l22x O
 for O
 me O
 , O
-international B-neutral
-teram I-neutral
-contests I-neutral
+international B-positive
+teram I-positive
+contests I-positive
 are O
 the O
 most O
@@ -3265,13 +3265,13 @@ an O
 award O
 at O
 the O
-egov B-neutral
-eindia I-neutral
-awards I-neutral
+egov B-positive
+eindia I-positive
+awards I-positive
 2011 O
 : O
-http://t.co/mi6vyunc B-neutral
-#narendramodi I-neutral
+http://t.co/mi6vyunc B-positive
+#narendramodi I-positive
 #gujarat O
 
 it O
@@ -3290,9 +3290,9 @@ you O
 really O
 are O
 . O
-e.e B-neutral
-. I-neutral
-cummings I-neutral
+e.e B-positive
+. I-positive
+cummings I-positive
 . O
 your O
 business O
@@ -3321,7 +3321,7 @@ android B-neutral
 launcher I-neutral
 ) O
 
-@cubeentofficial B-neutral
+@cubeentofficial B-positive
 please O
 bring O
 b2st O
@@ -3343,8 +3343,8 @@ soooo O
 long O
 ! O
 
-mel B-neutral
-gibson I-neutral
+mel B-positive
+gibson I-positive
 : O
 "good O
 lord O
@@ -3395,7 +3395,7 @@ with O
 http://t.co/so8vxpc9 O
 
 when O
-allah B-neutral
+allah B-positive
 had O
 finished O
 his O
@@ -3407,9 +3407,9 @@ over O
 his O
 throne O
 : O
-'my B-neutral
-mercy I-neutral
-preceded I-neutral
+'my B-positive
+mercy I-positive
+preceded I-positive
 my O
 anger.' O
 - O
@@ -3422,8 +3422,8 @@ job O
 , O
 steals O
 from O
-tip B-neutral
-jar I-neutral
+tip B-negative
+jar I-negative
 - O
 today O
 apos O
@@ -3497,9 +3497,9 @@ just O
 built O
 2 O
 square O
-feet B-neutral
-of I-neutral
-shelter I-neutral
+feet B-positive
+of I-positive
+shelter I-positive
 via O
 chrome O
 for O
@@ -3527,7 +3527,7 @@ tool O
 , O
 guarantees O
 top O
-google B-neutral
+google B-positive
 ranking O
 ! O
 http://t.co/wmuqumzo O
@@ -3555,7 +3555,7 @@ rock O
 will O
 rogers O
 
-@thesulaf B-negative
+@thesulaf B-positive
 for O
 several O
 reasons O
@@ -3674,20 +3674,20 @@ public O
 safety O
 . O
 
-haitham B-neutral
-al-maleh I-neutral
+haitham B-negative
+al-maleh I-negative
 - O
 piece O
 of O
 junk O
-"rescue B-neutral
-syria" I-neutral
+"rescue B-negative
+syria" I-negative
 by O
 bombing O
 it O
 and O
-sectarianly B-neutral
-triggring I-neutral
+sectarianly B-negative
+triggring I-negative
 it O
 h O
 still O
@@ -3699,11 +3699,11 @@ talk O
 ! O
 #alarabiya O
 
-martha B-neutral
-stewart's I-neutral
+martha B-positive
+stewart's I-positive
 perfect O
-baked B-neutral
-macaroni I-neutral
+baked B-positive
+macaroni I-positive
 & O
 cheese O
 - O
@@ -3737,13 +3737,13 @@ madison O
 http://www.notebookbag.info/microsoft-ladies-laptop-tote-madison/ O
 
 summer O
-thursdays B-neutral
-@swimspot I-neutral
+thursdays B-positive
+@swimspot I-positive
 in O
 la O
 to O
-benefit B-neutral
-pipeline I-neutral
+benefit B-positive
+pipeline I-positive
 to O
 a O
 cure O
@@ -3800,12 +3800,12 @@ the O
 masses O
 . O
 
-recycled B-neutral
-racer I-neutral
-runs I-neutral
+recycled B-positive
+racer I-positive
+runs I-positive
 on O
-veggie B-neutral
-oil I-neutral
+veggie B-positive
+oil I-positive
 and O
 chocolate O
 : O
@@ -3818,8 +3818,8 @@ green O
 and O
 going O
 fast O
-arent B-neutral
-mut I-neutral
+arent B-positive
+mut I-positive
 .. O
 http://tinyurl.com/ptql8j O
 
@@ -3861,16 +3861,16 @@ http://t.co/i1nvgsmt O
 @ O
 briancarriveau O
 : O
-mason B-neutral
-crosby's I-neutral
-633 I-neutral
+mason B-positive
+crosby's I-positive
+633 I-positive
 career O
 points O
 is O
 the O
 most O
 in O
-nfl B-neutral
+nfl B-positive
 history O
 by O
 a O
@@ -3883,15 +3883,15 @@ seasons." O
 amazing O
 !!! O
 
-@amnesty B-neutral
-#un I-neutral
+@amnesty B-positive
+#un I-positive
 it O
 is O
 very O
 strange O
 how O
-iraqi B-neutral
-government I-neutral
+iraqi B-positive
+government I-positive
 support O
 assad O
 despite O
@@ -3935,28 +3935,28 @@ and O
 check O
 out O
 this O
-amazon B-neutral
+amazon B-negative
 deal O
 : O
-'monster B-neutral
-mcc I-neutral
-avl300-s I-neutral
-home I-neutral
-theater I-neutral
+'monster B-negative
+mcc I-negative
+avl300-s I-negative
+home I-negative
+theater I-negative
 and O
-lighting B-neutral
-controller I-neutral
+lighting B-negative
+controller I-negative
 with O
 omnilink' O
 by O
-monster B-neutral
-cable I-neutral
+monster B-negative
+cable I-negative
 http://bit.ly/acet7h O
 
 success O
 is O
-often B-neutral
-achieved I-neutral
+often B-positive
+achieved I-positive
 by O
 those O
 who O
@@ -3965,9 +3965,9 @@ know O
 that O
 failure O
 is O
-inevitable B-neutral
-. I-neutral
-coco I-neutral
+inevitable B-positive
+. I-positive
+coco I-positive
 chanel O
 
 help O
@@ -4089,8 +4089,8 @@ career-high O
 on O
 spurs O
 
-ties B-neutral
-renewed I-neutral
+ties B-positive
+renewed I-positive
 , O
 congress-dmk O
 eyes O
@@ -4098,9 +4098,9 @@ early O
 poll O
 http://tinyurl.com/23gctd5 O
 
-lukas B-neutral
-podolski I-neutral
-reluctant I-neutral
+lukas B-negative
+podolski I-negative
+reluctant I-negative
 to O
 gamble O
 germany O
@@ -4108,12 +4108,12 @@ place O
 with O
 move O
 to O
-arsenal B-neutral
+arsenal B-negative
 : O
-â¢ B-neutral
-kÃ¶ln I-neutral
-striker I-neutral
-desperate I-neutral
+â¢ B-negative
+kÃ¶ln I-negative
+striker I-negative
+desperate I-negative
 to O
 play O
 at O
@@ -4152,19 +4152,19 @@ mark B-neutral
 : O
 24 O
 
-forex B-neutral
+forex B-negative
 - O
 eur/usd O
-halts B-neutral
-slide I-neutral
+halts B-negative
+slide I-negative
 after O
 greece O
 scare O
 : O
 blessings O
 from O
-private B-neutral
-creditors I-neutral
+private B-negative
+creditors I-negative
 is O
 a O
 requirement O
@@ -4211,7 +4211,7 @@ perry O
 ! O
 : O
 go O
-colts B-neutral
+colts B-negative
 that O
 will O
 knock O
@@ -4241,7 +4241,7 @@ profit O
 growth O
 http://bit.ly/9ezne8 O
 
-@daltoncyr B-neutral
+@daltoncyr B-positive
 he's O
 cool O
 ! O
@@ -4251,8 +4251,8 @@ cute O
 !! O
 and O
 many O
-my B-neutral
-friend I-neutral
+my B-positive
+friend I-positive
 say O
 , O
 yasmin O
@@ -4315,9 +4315,9 @@ http://t.co/rp2tuw83 I-neutral
 via O
 @mashable O
 
-dell B-neutral
-ultrabook I-neutral
-90 I-neutral
+dell B-positive
+ultrabook I-positive
+90 I-positive
 % O
 alike O
 mb-air O
@@ -4328,11 +4328,11 @@ shall O
 happy O
 ! O
 , O
-"intel B-neutral
-ivy I-neutral
+"intel B-positive
+ivy I-positive
 bridge O
-chip B-neutral
-delayed I-neutral
+chip B-positive
+delayed I-positive
 , O
 windows O
 8 O
@@ -4340,7 +4340,7 @@ in O
 september O
 http://t.co/irqdit39" O
 
-sharp B-neutral
+sharp B-positive
 looks O
 to O
 take O
@@ -4352,8 +4352,8 @@ new O
 'galapagos' O
 tablet O
 [ O
-tablets B-neutral
-news I-neutral
+tablets B-positive
+news I-positive
 ] O
 ~ O
 ipados O
@@ -4371,8 +4371,8 @@ careers.org B-neutral
 occupation I-neutral
 profile O
 
-@haoliankia B-neutral
-@octoberhorizon I-neutral
+@haoliankia B-positive
+@octoberhorizon I-positive
 lol O
 !! O
 dun O
@@ -4392,22 +4392,22 @@ ask O
 luara O
 to O
 make O
-herself B-neutral
-useful I-neutral
+herself B-positive
+useful I-positive
 haha O
 
 and O
 now O
 the O
-national B-neutral
-environmental I-neutral
-protection I-neutral
-agency I-neutral
+national B-positive
+environmental I-positive
+protection I-positive
+agency I-positive
 is O
 going O
 to O
-instal B-neutral
-pollution I-neutral
+instal B-positive
+pollution I-positive
 reading O
 machine O
 was O
@@ -4423,8 +4423,8 @@ i O
 was O
 on O
 the O
-evi B-neutral
-beta I-neutral
+evi B-positive
+beta I-positive
 , O
 very O
 promising O
@@ -4432,12 +4432,12 @@ app O
 . O
 not O
 cool O
-apple B-neutral
+apple B-positive
 ! O
 http://t.co/vzq83zi4 O
 
-abraham B-neutral
-lincoln's I-neutral
+abraham B-negative
+lincoln's I-negative
 mother O
 died O
 when O
@@ -4451,8 +4451,8 @@ cow O
 that O
 grazed O
 on O
-poisonous B-neutral
-snakeroot I-neutral
+poisonous B-negative
+snakeroot I-negative
 . O
 
 i O
@@ -4469,11 +4469,11 @@ http://t.co/wamcvvl O
 via O
 @digg O
 
-@eliasrios B-neutral
-brand I-neutral
-new I-neutral
-man I-neutral
-utd I-neutral
+@eliasrios B-positive
+brand I-positive
+new I-positive
+man I-positive
+utd I-positive
 babywear O
 now O
 available O
@@ -4491,9 +4491,9 @@ on O
 @myspace O
 http://t.co/046sj5ky O
 
-hip B-neutral
-hop I-neutral
-lossle I-neutral
+hip B-positive
+hop I-positive
+lossle I-positive
 ss: O
 krs-one O
 - O
@@ -4503,7 +4503,7 @@ keep O
 right O
 http://t.co/f5seu39k O
 
-israel B-neutral
+israel B-positive
 seems O
 to O
 be O
@@ -4519,8 +4519,8 @@ to O
 oppose' O
 .. O
 same O
-strategy B-neutral
-adopted I-neutral
+strategy B-positive
+adopted I-positive
 by O
 the O
 former O
@@ -4544,13 +4544,13 @@ to O
 have O
 sex O
 in O
-bangalore B-neutral
-8722971642 I-neutral
+bangalore B-positive
+8722971642 I-positive
 : O
 call O
-kiran B-neutral
-8722971642 I-neutral
-charming I-neutral
+kiran B-positive
+8722971642 I-positive
+charming I-positive
 and O
 sexy O
 girls O
@@ -4582,12 +4582,12 @@ quote O
 "twitter O
 promo" O
 
-@ninjaamonkey B-neutral
+@ninjaamonkey B-positive
 her O
 name O
 is O
-holliday B-neutral
-slater I-neutral
+holliday B-positive
+slater I-positive
 and O
 she's O
 horrible O
@@ -4601,10 +4601,10 @@ gay O
 and O
 she O
 loves O
-shaun B-neutral
+shaun B-positive
 the O
-sheeps B-neutral
-retarded I-neutral
+sheeps B-positive
+retarded I-positive
 sister O
 
 i O
@@ -4632,14 +4632,14 @@ on O
 wagner O
 ! O
 
-aol B-neutral
-shuts I-neutral
+aol B-negative
+shuts I-negative
 down O
-social B-neutral
-network I-neutral
-propeller.com I-neutral
-. I-neutral
-yikes I-neutral
+social B-negative
+network I-negative
+propeller.com I-negative
+. I-negative
+yikes I-negative
 , O
 one O
 more O
@@ -4670,8 +4670,8 @@ capital O
 i O
 voted O
 for O
-adam B-neutral
-lambert I-neutral
+adam B-positive
+lambert I-positive
 - O
 better O
 than O
@@ -4680,9 +4680,9 @@ know O
 myself O
 on O
 this O
-week's B-neutral
-#vh1top20 I-neutral
-countdown I-neutral
+week's B-positive
+#vh1top20 I-positive
+countdown I-positive
 . O
 http://t.co/vpleynuu O
 
@@ -4706,15 +4706,15 @@ liked O
 a O
 @youtube O
 video O
-http://t.co/sgzllbnq B-neutral
-fashion I-neutral
+http://t.co/sgzllbnq B-positive
+fashion I-positive
 friday O
 : O
-diy B-neutral
-knuckle I-neutral
-clutch- I-neutral
-alexander I-neutral
-mcqueen I-neutral
+diy B-positive
+knuckle I-positive
+clutch- I-positive
+alexander I-positive
+mcqueen I-positive
 inspired O
 
 an O
@@ -4728,8 +4728,8 @@ http://t.co/dwwyfwr O
 
 check O
 out O
-glee B-neutral
-performing I-neutral
+glee B-positive
+performing I-positive
 the O
 wanted's O
 glad O
@@ -4754,17 +4754,17 @@ in O
 pakistan O
 which O
 killed O
-hakim B-neutral
-ullah I-neutral
-mehsud I-neutral
-http://t.co/6iyw5rof I-neutral
+hakim B-negative
+ullah I-negative
+mehsud I-negative
+http://t.co/6iyw5rof I-negative
 via O
 @viewstonews O
 
-@busymommymedia B-neutral
-@5minutesformom I-neutral
+@busymommymedia B-positive
+@5minutesformom I-positive
 is O
-pinterest B-neutral
+pinterest B-positive
 a O
 good O
 place O
@@ -4815,8 +4815,8 @@ speech O
 ? O
 http://t.co/vxt1txs O
 
-david B-neutral
-beckham I-neutral
+david B-negative
+beckham I-negative
 wants O
 ''one O
 or O
@@ -4829,8 +4829,8 @@ wife O
 to O
 expand O
 their O
-existing B-neutral
-brood I-neutral
+existing B-negative
+brood I-negative
 . O
 http://t.co/ct7lxnzd O
 
@@ -4840,8 +4840,8 @@ of O
 the O
 best O
 . O
-50-60 B-neutral
-auctions I-neutral
+50-60 B-positive
+auctions I-positive
 per O
 year O
 with O
@@ -4876,7 +4876,7 @@ p O
 http://t.co/uooylc3l O
 pregnancy O
 
-@lizzlaw B-neutral
+@lizzlaw B-negative
 i O
 believe O
 this O
@@ -4884,18 +4884,18 @@ feels O
 akin O
 to O
 when O
-adele B-neutral
-swept I-neutral
-six I-neutral
-awards I-neutral
+adele B-negative
+swept I-negative
+six I-negative
+awards I-negative
 out O
 of O
 six O
 at O
 the O
-grammys B-neutral
-. I-neutral
-why're I-neutral
+grammys B-negative
+. I-negative
+why're I-negative
 you O
 so O
 against O
@@ -4920,7 +4920,7 @@ zahr I-neutral
 ... O
 http://t.co/5e3uxl4g O
 
-abe B-neutral
+abe B-positive
 staff O
 won O
 3rd O
@@ -4934,13 +4934,13 @@ catergory O
 congratulations O
 ! O
 
-texas B-positive
-chicken I-positive
-4-for-4.80 I-positive
-mondays I-positive
+texas B-neutral
+chicken I-neutral
+4-for-4.80 I-neutral
+mondays I-neutral
 ! O
-#fastfoodfix B-positive
-@allankarlo I-positive
+#fastfoodfix B-neutral
+@allankarlo I-neutral
 http://t.co/trcw52qo O
 
 @bertpix B-neutral
@@ -4994,7 +4994,7 @@ liverpork B-neutral
 2nite I-neutral
 ? O
 
-jonathan's B-neutral
+jonathan's B-positive
 been O
 found O
 . O
@@ -5022,29 +5022,29 @@ congratulations O
 to O
 our O
 champ O
-roger B-neutral
-#federer I-neutral
+roger B-positive
+#federer I-positive
 on O
 winning O
 his O
 1st O
-bnp B-neutral
-paribas I-neutral
-masters I-neutral
+bnp B-positive
+paribas I-positive
+masters I-positive
 in O
-paris B-neutral
+paris B-positive
 . O
 \o/ O
 
 disobey O
-putin B-neutral
-anti-election I-neutral
+putin B-negative
+anti-election I-negative
 protest O
 in O
 moscow O
 - O
-@demotix B-neutral
-news I-neutral
+@demotix B-negative
+news I-negative
 http://t.co/m9ojya5f O
 
 nepal B-neutral
@@ -5077,8 +5077,8 @@ strike O
 was O
 threatened O
 by O
-gdf B-neutral
-air I-neutral
+gdf B-negative
+air I-negative
 traffic O
 controllers O
 union O
@@ -5098,8 +5098,8 @@ s: O
 http://t.co/dbghcmio O
 
 #nowplaying O
-joan B-neutral
-amatrading I-neutral
+joan B-positive
+amatrading I-positive
 - O
 the O
 very O
@@ -5114,8 +5114,8 @@ people O
 do O
 
 @nickkristof O
-edna B-neutral
-adan I-neutral
+edna B-positive
+adan I-positive
 is O
 a O
 genuine O
@@ -5134,7 +5134,7 @@ support O
 . O
 
 new O
-google B-neutral
+google B-positive
 search O
 tool O
 s: O
@@ -5150,7 +5150,7 @@ agency O
 ? O
 http://bit.ly/9lwwos O
 
-golf B-neutral
+golf B-positive
 is O
 a O
 lot O
@@ -5182,38 +5182,38 @@ partners O
 ! O
 j.sweetser O
 
-cheap B-neutral
-2007 I-neutral
-gmc I-neutral
-acadia I-neutral
-2wd I-neutral
-gasoline I-neutral
+cheap B-negative
+2007 I-negative
+gmc I-negative
+acadia I-negative
+2wd I-negative
+gasoline I-negative
 for O
 sale O
 ...... O
 http://www.cheapoldcarsinusa.com/cheapoldcarslisting.php?id=9985 O
 
 rip O
-etta B-neutral
-james I-neutral
+etta B-negative
+james I-negative
 , O
 a O
-lady B-neutral
+lady B-negative
 that O
 blessed O
 us O
 with O
 some O
 real O
-musical B-neutral
-gems I-neutral
+musical B-negative
+gems I-negative
 . O
 http://t.co/qwpipweq O
 
 those O
-iranian/chinese B-neutral
-dissent I-neutral
-suppressors I-neutral
+iranian/chinese B-negative
+dissent I-negative
+suppressors I-negative
 in O
 the O
 uk O
@@ -5223,28 +5223,28 @@ office O
 gearing O
 up O
 to O
-blind B-neutral
-& I-neutral
-maim I-neutral
-protesters I-neutral
+blind B-negative
+& I-negative
+maim I-negative
+protesters I-negative
 more O
 efficiently O
 http://t.co/udsd7dhm O
 
-nmeda B-neutral
+nmeda B-positive
 is O
 the O
 only O
 association O
 that O
-promotes B-neutral
-safe I-neutral
-driving I-neutral
+promotes B-positive
+safe I-positive
+driving I-positive
 and O
 equipment O
 for O
-disabled B-neutral
-people.they I-neutral
+disabled B-positive
+people.they I-positive
 have O
 much O
 to O
@@ -5256,7 +5256,7 @@ fan O
 : O
 oppa O
 , O
-arsenal B-neutral
+arsenal B-positive
 won O
 the O
 match O
@@ -5282,7 +5282,7 @@ minho O
 : O
 no O
 , O
-arsenal B-neutral
+arsenal B-positive
 will O
 ! O
 
@@ -5335,16 +5335,16 @@ shots O
 like O
 these O
 . O
-hint B-neutral
-hint I-neutral
+hint B-positive
+hint I-positive
 . O
 by O
-julian B-neutral
-beattie I-neutral
+julian B-positive
+beattie I-positive
 http://t.co/16g9wcob O
 
 @rashidalfowzan O
-gm B-neutral
+gm B-negative
 . O
 i O
 watched O
@@ -5406,12 +5406,12 @@ quarterback B-neutral
 http://t.co/nt30bp01 I-neutral
 #nfl O
 
-@stefsunyanzi B-neutral
-paul I-neutral
+@stefsunyanzi B-positive
+paul I-positive
 the O
-octopus B-neutral
-defeated I-neutral
-netherlands I-neutral
+octopus B-positive
+defeated I-positive
+netherlands I-positive
 ...... O
 sigh O
 ....... O
@@ -5437,8 +5437,8 @@ politician O
 #nowplaying O
 koop O
 - O
-drum B-neutral
-rhythm I-neutral
+drum B-positive
+rhythm I-positive
 a O
 on O
 lush O
@@ -5466,17 +5466,17 @@ sent O
 messages O
 opposing O
 keystone O
-xl B-neutral
-http://t.co/kzxqtx48 I-neutral
+xl B-positive
+http://t.co/kzxqtx48 I-positive
 #nokxl O
 
 ideas O
-corner/march B-negative
-2n I-negative
+corner/march B-positive
+2n I-positive
 d: O
 by O
-gerry B-negative
-davies I-negative
+gerry B-positive
+davies I-positive
 || O
 march O
 2 O
@@ -5513,14 +5513,14 @@ in O
 anaheim O
 ! O
 
-australians B-neutral
-embrace I-neutral
+australians B-positive
+embrace I-positive
 the O
 third O
 dimension O
 ;p O
-http://bit.ly/cvfcbm B-neutral
-panasonic I-neutral
+http://bit.ly/cvfcbm B-positive
+panasonic I-positive
 led O
 tv O
 
@@ -5530,14 +5530,14 @@ talk O
 and O
 guidance O
 : O
-quran B-neutral
-& I-neutral
-sunnah I-neutral
-narrated I-neutral
-tariq I-neutral
+quran B-positive
+& I-positive
+sunnah I-positive
+narrated I-positive
+tariq I-positive
 ( O
-radi-allahu B-neutral
-'anhu I-neutral
+radi-allahu B-positive
+'anhu I-positive
 ): O
 'abdullah O
 said O
@@ -5615,7 +5615,7 @@ if O
 you O
 need O
 
-pricele B-neutral
+pricele B-negative
 ss: O
 â O
 @ O
@@ -5623,11 +5623,11 @@ nachofiesta O
 : O
 breaking O
 : O
-rudy B-neutral
-giuliani I-neutral
-"entirely I-neutral
-rejects" I-neutral
-alwaleed's I-neutral
+rudy B-negative
+giuliani I-negative
+"entirely I-negative
+rejects" I-negative
+alwaleed's I-negative
 offer O
 of O
 10 O
@@ -5642,9 +5642,9 @@ reach O
 high O
 , O
 for O
-stars B-neutral
-lie I-neutral
-hidden I-neutral
+stars B-negative
+lie I-negative
+hidden I-negative
 in O
 your O
 soul O
@@ -5659,14 +5659,14 @@ precedes O
 the O
 goal O
 . O
-pamela B-neutral
-vaull I-neutral
+pamela B-negative
+vaull I-negative
 starr O
 
 yeah O
 , O
 yeah O
-putin B-neutral
+putin B-positive
 wins O
 , O
 i O
@@ -5689,16 +5689,16 @@ years O
 i'm O
 included O
 
-intel B-neutral
-ceo I-neutral
-paul I-neutral
-otellini I-neutral
+intel B-negative
+ceo I-negative
+paul I-negative
+otellini I-negative
 details O
 strategic O
 new O
 engagements O
 with O
-orange B-neutral
+orange B-negative
 , O
 lava O
 ... O
@@ -5729,9 +5729,9 @@ a O
 with O
 u.s O
 . O
-defender B-neutral
-carlos I-neutral
-bocanegra I-neutral
+defender B-positive
+carlos I-positive
+bocanegra I-positive
 : O
 questions O
 for O
@@ -5742,8 +5742,8 @@ u.s O
 . O
 and O
 glasgow O
-rangers B-neutral
-defender I-neutral
+rangers B-positive
+defender I-positive
 ... O
 http://t.co/tkljztfm O
 
@@ -5775,8 +5775,8 @@ http://t.co/v2mbny4w O
 feb O
 2005 O
 , O
-kylie B-neutral
-minogue I-neutral
+kylie B-positive
+minogue I-positive
 was O
 voted O
 the O
@@ -5795,8 +5795,8 @@ housekeeping O
 http://t.co/bwlqozur O
 
 our O
-trusty B-neutral
-mechanic I-neutral
+trusty B-negative
+mechanic I-negative
 mo O
 working O
 hard O
@@ -5804,16 +5804,16 @@ on O
 a O
 tired O
 out O
-car B-neutral
-http://t.co/hokdshu I-neutral
+car B-negative
+http://t.co/hokdshu I-negative
 http://t.co/j2pcvnj O
 
-los B-neutral
+los B-positive
 angeles O
 times O
 : O
-rose-colored B-neutral
-glasses I-neutral
+rose-colored B-positive
+glasses I-positive
 may O
 help O
 love O
@@ -5882,16 +5882,16 @@ sucks O
 @gurvirkhaira O
 http://t.co/nlhgcdh2 O
 
-http://t.co/ubxmwwqz B-neutral
+http://t.co/ubxmwwqz B-positive
 - O
-nokia B-neutral
+nokia B-positive
 has O
 announced O
 its O
-cheapest B-neutral
-windows I-neutral
+cheapest B-positive
+windows I-positive
 phone O
-nokia B-neutral
+nokia B-positive
 lumia O
 610 O
 . O
@@ -5909,8 +5909,8 @@ cooking I-neutral
 ... O
 !!! O
 
-glossa's B-neutral
-yoshi I-neutral
+glossa's B-positive
+yoshi I-positive
 is O
 really O
 nice O
@@ -5920,10 +5920,10 @@ me O
 everyday O
 . O
 
-poland B-neutral
+poland B-positive
 , O
-czech B-neutral
-republic I-neutral
+czech B-positive
+republic I-positive
 , O
 greece O
 and O
@@ -5954,9 +5954,9 @@ for O
 being O
 happy O
 is O
-appreciating B-neutral
-& I-neutral
-liking I-neutral
+appreciating B-positive
+& I-positive
+liking I-positive
 what O
 you O
 have O
@@ -6048,13 +6048,13 @@ well O
 #egypt O
 #erdogan O
 
-aristotle B-neutral
-developed I-neutral
+aristotle B-positive
+developed I-positive
 a O
 theory O
 on O
-progressive B-neutral
-ensoulment I-neutral
+progressive B-positive
+ensoulment I-positive
 from O
 vegetative O
 , O
@@ -6099,7 +6099,7 @@ region O
 http://bit.ly/hfnqai O
 #fb O
 
-"fabulous B-neutral
+"fabulous B-positive
 book O
 ... O
 thought O
@@ -6123,18 +6123,18 @@ http://t.co/fhphil4s O
 
 syria O
 : O
-syrian B-neutral
+syrian B-negative
 tanks O
 withdrawn O
 from O
 cities O
 , O
 says O
-arab B-neutral
-league I-neutral
+arab B-negative
+league I-negative
 http://t.co/j3gfhzxg O
 
-@beautyfirst_ne B-neutral
+@beautyfirst_ne B-positive
 glad O
 to O
 be O
@@ -6154,8 +6154,8 @@ mad O
 about O
 prize O
 s: O
-dbs B-neutral
-dine I-neutral
+dbs B-positive
+dine I-positive
 & O
 win O
 w/ O
@@ -6176,8 +6176,8 @@ holiday O
 for O
 2 O
 to O
-hong B-neutral
-kong I-neutral
+hong B-positive
+kong I-positive
 http://ow.ly/102xy O
 
 @shellylynott B-neutral
@@ -6197,7 +6197,7 @@ you O
 one O
 . O
 
-@alemacol B-neutral
+@alemacol B-positive
 i'm O
 still O
 here O
@@ -6210,8 +6210,8 @@ sunset O
 !! O
 ... O
 a O
-big B-neutral
-hug I-neutral
+big B-positive
+hug I-positive
 for O
 you O
 !!! O
@@ -6220,10 +6220,10 @@ http://myloc.me/hreon O
 
 listening O
 to O
-bedstuy B-neutral
-parade I-neutral
-& I-neutral
-funeral I-neutral
+bedstuy B-positive
+parade I-positive
+& I-positive
+funeral I-positive
 march O
 ( O
 feat O
@@ -6231,8 +6231,8 @@ feat O
 pa O
 ... O
 by O
-mos B-neutral
-def I-neutral
+mos B-positive
+def I-positive
 #nowplaying O
 http://t.co/euknyog1 O
 vÃÂ­a O
@@ -6253,23 +6253,23 @@ my O
 page O
 . O
 
-bbc B-neutral
-news I-neutral
+bbc B-positive
+news I-positive
 australia O
 leadership O
 pm O
-gillard B-neutral
-defeats I-neutral
-kevin B-neutral
-ru I-neutral
-dd: I-neutral
-australian B-neutral
+gillard B-positive
+defeats I-positive
+kevin B-positive
+ru I-positive
+dd: I-positive
+australian B-positive
 pm O
-julia B-neutral
-gillard I-neutral
-defeats I-neutral
-kevin B-neutral
-rudd I-neutral
+julia B-positive
+gillard I-positive
+defeats I-positive
+kevin B-positive
+rudd I-positive
 in O
 t O
 ... O
@@ -6314,20 +6314,20 @@ boost O
 your O
 happiness O
 - O
-yahoo B-neutral
+yahoo B-positive
 ! O
 lifestyle O
 india O
 http://t.co/no1ffvdf O
 
-cia B-neutral
+cia B-negative
 used O
 'illegal O
 , O
-inaccurate B-neutral
-code I-neutral
+inaccurate B-negative
+code I-negative
 to O
-target B-neutral
+target B-negative
 kill O
 drones' O
 -- O
@@ -6418,7 +6418,7 @@ anyone O
 ? O
 http://t.co/1elgio6 O
 
-apple B-neutral
+apple B-negative
 unveils O
 "the O
 new O
@@ -6438,22 +6438,22 @@ rumor O
 and O
 speculation O
 ( O
-driving B-neutral
-tons I-neutral
+driving B-negative
+tons I-negative
 o O
 ... O
 http://t.co/lkohpne7 O
 
-@barcastuff B-negative
-motta I-negative
+@barcastuff B-neutral
+motta I-neutral
 is O
 not O
 an O
-acm B-negative
-player I-negative
+acm B-neutral
+player I-neutral
 :) O
 
-@mohammad_syria B-neutral
+@mohammad_syria B-positive
 please O
 rt O
 : O
@@ -6465,7 +6465,7 @@ in O
 #nyc O
 by O
 the O
-un B-neutral
+un B-positive
 at O
 1pm O
 . O
@@ -6500,15 +6500,15 @@ pleasure O
 honor O
 to O
 meet O
-philip B-neutral
-kotler I-neutral
+philip B-positive
+kotler I-positive
 , O
 to O
 attend O
 the O
-conference-forum B-neutral
-"marketing I-neutral
-3.0" I-neutral
+conference-forum B-positive
+"marketing I-positive
+3.0" I-positive
 by O
 him O
 !! O
@@ -6549,15 +6549,15 @@ strategies O
 summit O
 http://feedly.com/k/kfl60p O
 
-espn B-neutral
+espn B-positive
 poll O
 says O
-tebow B-neutral
+tebow B-positive
 is O
 nation's O
 most O
-popular B-neutral
-athlete I-neutral
+popular B-positive
+athlete I-positive
 . O
 video O
 and O
@@ -6575,8 +6575,8 @@ honey O
 ( O
 c O
 ) O
-winney B-positive
-f***kin I-positive
+winney B-neutral
+f***kin I-neutral
 pooh O
 
 i O
@@ -6591,8 +6591,8 @@ followers O
 ! O
 http://t.co/s9oc91zf O
 
-roald B-neutral
-dahl I-neutral
+roald B-negative
+dahl I-negative
 : O
 "we O
 have O
@@ -6608,18 +6608,18 @@ do O
 strike O
 that O
 , O
-reverse B-neutral
-it." I-neutral
+reverse B-negative
+it." I-negative
 http://bit.ly/abo0wq O
 
 very O
 cool O
 set O
 of O
-#vintage B-neutral
-logo I-neutral
-#designs I-neutral
-@designstreamin I-neutral
+#vintage B-positive
+logo I-positive
+#designs I-positive
+@designstreamin I-positive
 , O
 definitely O
 worth O
@@ -6634,19 +6634,19 @@ only O
 one O
 disappointed O
 by O
-#noassadonabc B-neutral
-bc I-neutral
+#noassadonabc B-negative
+bc I-negative
 imagine O
 the O
 anxiety O
 , O
 fear O
 of O
-regime B-neutral
-elements I-neutral
-seeing I-neutral
-spacefiller I-neutral
-bashar I-neutral
+regime B-negative
+elements I-negative
+seeing I-negative
+spacefiller I-negative
+bashar I-negative
 doing O
 his O
 tellall O
@@ -6654,8 +6654,8 @@ tellall O
 how O
 2 O
 use O
-inbuilt B-neutral
-bluetooth I-neutral
+inbuilt B-positive
+bluetooth I-positive
 in O
 win O
 xp O
@@ -6663,14 +6663,14 @@ and O
 win O
 vista O
 ? O
--start B-neutral
--run I-neutral
+-start B-positive
+-run I-positive
 command O
--type B-neutral
-'fsquirt' I-neutral
+-type B-positive
+'fsquirt' I-positive
 now O
-bluetooth B-neutral
-file I-neutral
+bluetooth B-positive
+file I-positive
 transfer O
 wizard O
 opens O
@@ -6695,15 +6695,15 @@ test O
 & O
 keep O
 new O
-sony B-neutral
-vaio I-neutral
+sony B-positive
+vaio I-positive
 laptop O
 for O
 free O
 ? O
 enter O
-zip B-neutral
-code I-neutral
+zip B-positive
+code I-positive
 here O
 , O
 see O
@@ -6715,8 +6715,8 @@ area O
 spon O
 http://tinyurl.com/ykxhlxz O
 
-jumpfly B-neutral
-named I-neutral
+jumpfly B-positive
+named I-positive
 best O
 pay O
 per O
@@ -6728,8 +6728,8 @@ http://t.co/efjdgywu O
 for O
 ... O
 - O
-albany B-neutral
-times I-neutral
+albany B-positive
+times I-positive
 union O
 http://t.co/8dec7acl O
 
@@ -6737,20 +6737,20 @@ let O
 get O
 free O
 more O
-twitter B-neutral
+twitter B-positive
 followers O
 ! O
 http://tinyurl.com/26k6m3l O
 
-obama B-neutral
-'allow I-neutral
-small I-neutral
-business I-neutral
-mortgage I-neutral
-help' I-neutral
+obama B-negative
+'allow I-negative
+small I-negative
+business I-negative
+mortgage I-negative
+help' I-negative
 - O
-political B-neutral
-punch I-neutral
+political B-negative
+punch I-negative
 : O
 looking O
 to O
@@ -6758,10 +6758,10 @@ spur O
 job O
 growth O
 , O
-pres B-neutral
-. I-neutral
-obama I-neutral
-proposed I-neutral
+pres B-negative
+. I-negative
+obama I-negative
+proposed I-negative
 the O
 ... O
 http://bit.ly/anuy7k O
@@ -6783,9 +6783,9 @@ about O
 graduates O
 achievements O
 like O
-@maryambinfahad B-neutral
-@naylaalkhaja I-neutral
-@malmarri I-neutral
+@maryambinfahad B-positive
+@naylaalkhaja I-positive
+@malmarri I-positive
 that O
 will O
 be O
@@ -6862,7 +6862,7 @@ has O
 ... O
 http://t.co/pxmgtxnx O
 
-nyse B-neutral
+nyse B-negative
 : O
 $ O
 hca O
@@ -6877,7 +6877,7 @@ bounce O
 what O
 caused O
 the O
-panic B-neutral
+panic B-negative
 ?? O
 some O
 funds O
@@ -6900,12 +6900,12 @@ reuters B-neutral
 blogs O
 http://t.co/jcemvrp O
 
-state B-neutral
-naacp I-neutral
-endorses I-neutral
+state B-positive
+naacp I-positive
+endorses I-positive
 â O
-parent B-neutral
-trigger I-neutral
+parent B-positive
+trigger I-positive
 â O
 | O
 thoughts O
@@ -6928,8 +6928,8 @@ anything O
 except O
 khilafah O
 , O
-muslims B-neutral
-grovelling I-neutral
+muslims B-negative
+grovelling I-negative
 and O
 puppeting O
 for O
@@ -6937,7 +6937,7 @@ the O
 west O
 . O
 
-bull B-neutral
+bull B-negative
 . O
 are O
 you O
@@ -6963,13 +6963,13 @@ cont O
 ) O
 http://tl.gd/82itsh O
 
-kris B-neutral
-humphries I-neutral
-refuses I-neutral
+kris B-negative
+humphries I-negative
+refuses I-negative
 to O
 sign O
-divorce B-neutral
-papers I-neutral
+divorce B-negative
+papers I-negative
 http://t.co/jqkevwjj O
 
 the O
@@ -7054,14 +7054,14 @@ on O
 thursday O
 http://tcrn.ch/m9qqvo O
 
-reminder B-neutral
+reminder B-positive
 : O
-pre B-neutral
-registration I-neutral
+pre B-positive
+registration I-positive
 for O
 the O
-liberty B-neutral
-county I-neutral
+liberty B-positive
+county I-positive
 tournament O
 ends O
 tomorrow O
@@ -7082,15 +7082,15 @@ leading O
 by O
 poor O
 and O
-rich B-neutral
-muslim I-neutral
+rich B-positive
+muslim I-positive
 an O
 christ O
-al B-neutral
+al B-positive
 kind O
 of O
-egyptian B-neutral
-society I-neutral
+egyptian B-positive
+society I-positive
 im O
 tunisian O
 and O
@@ -7098,8 +7098,8 @@ proud O
 go O
 egypt O
 
-white B-neutral
-house I-neutral
+white B-negative
+house I-negative
 condemned O
 the O
 assassination O
@@ -7107,29 +7107,29 @@ of O
 kurdish O
 opposition O
 leader O
-mishaal B-neutral
-al-tammo I-neutral
+mishaal B-negative
+al-tammo I-negative
 in O
-syria- B-neutral
-vok I-neutral
-radio I-neutral
+syria- B-negative
+vok I-negative
+radio I-negative
 : O
 http://t.co/ndairtlj O
 via O
 @addthis O
 
 on O
-today's B-neutral
-wcco I-neutral
-home I-neutral
-improvement I-neutral
+today's B-positive
+wcco I-positive
+home I-positive
+improvement I-positive
 show O
 , O
-andy B-neutral
+andy B-positive
 will O
 discuss O
-proper B-neutral
-water I-neutral
+proper B-positive
+water I-positive
 management O
 and O
 explain O
@@ -7142,7 +7142,7 @@ could O
 ... O
 http://fb.me/tydy3eyb O
 
-"ability B-neutral
+"ability B-positive
 can O
 take O
 you O
@@ -7218,12 +7218,12 @@ you O
 follow O
 us O
 on O
-twitter B-neutral
+twitter B-positive
 or O
 like O
 us O
 on O
-facebook B-neutral
+facebook B-positive
 to O
 show O
 you're O
@@ -7240,7 +7240,7 @@ the O
 queue O
 ;-) O
 
-@musics1stlove B-neutral
+@musics1stlove B-positive
 well O
 kreashawn O
 claims O
@@ -7252,10 +7252,10 @@ after O
 it O
 posted O
 a O
-slewwww B-neutral
-of I-neutral
-racist I-neutral
-azz I-neutral
+slewwww B-positive
+of I-positive
+racist I-positive
+azz I-positive
 comments O
 #cmonson O
 
@@ -7314,17 +7314,17 @@ accomplish O
 something O
 can O
 do O
-anything.- B-neutral
-kircher I-neutral
+anything.- B-positive
+kircher I-positive
 , O
 donald O
 
-alfie B-neutral
-allen I-neutral
+alfie B-positive
+allen I-positive
 and O
-jaime B-neutral
-winstone I-neutral
-split I-neutral
+jaime B-positive
+winstone I-positive
+split I-positive
 after O
 3 O
 years O
@@ -7336,41 +7336,41 @@ for O
 good O
 . O
 
-facebook B-neutral
-slammed I-neutral
+facebook B-negative
+slammed I-negative
 by O
-massive B-neutral
-porn I-neutral
+massive B-negative
+porn I-negative
 attack O
 - O
 graphic O
 , O
 violent O
 images O
-flood B-neutral
-news I-neutral
-feeds I-neutral
-http://t.co/0rrwoqzk I-neutral
+flood B-negative
+news I-negative
+feeds I-negative
+http://t.co/0rrwoqzk I-negative
 via O
-@newser B-neutral
-ouch I-neutral
+@newser B-negative
+ouch I-negative
 ! O
 
 only O
 italy O
 : O
 how O
-teenagers B-neutral
-learned I-neutral
+teenagers B-negative
+learned I-negative
 to O
-hate B-neutral
-joseph I-neutral
-kony I-neutral
+hate B-negative
+joseph I-negative
+kony I-negative
 : O
 the O
-social B-neutral
-media I-neutral
-campaign I-neutral
+social B-negative
+media I-negative
+campaign I-negative
 by O
 invisible O
 children O
@@ -7379,7 +7379,7 @@ drawn O
 ... O
 http://t.co/wvj56p7o O
 
-@meko2301 B-neutral
+@meko2301 B-positive
 dont O
 ask O
 why O
@@ -7418,23 +7418,23 @@ edition O
 ) O
 http://ourl.com/hxeq O
 
-samsung B-neutral
+samsung B-negative
 galaxy O
 s2 O
 can't O
 sync O
 with O
-samsung B-neutral
-kies I-neutral
+samsung B-negative
+kies I-negative
 . O
 problem O
 ? O
 
-courtesy B-neutral
-of I-neutral
-@urjobcoach I-neutral
-tracey I-neutral
-walker I-neutral
+courtesy B-positive
+of I-positive
+@urjobcoach I-positive
+tracey I-positive
+walker I-positive
 explains O
 everything O
 you O
@@ -7443,8 +7443,8 @@ to O
 know O
 about O
 the O
-empower B-neutral
-network I-neutral
+empower B-positive
+network I-positive
 ! O
 http://t.co/d6ecoivb O
 
@@ -7456,7 +7456,7 @@ via O
 twitter B-neutral
 http://t.co/aypqkf3l O
 
-âbamdad B-neutral
+âbamdad B-negative
 | O
 will O
 # O
@@ -7493,17 +7493,17 @@ dj B-neutral
 powa I-neutral
 http://t.co/b1mtc5aw O
 
-caesar B-positive
-galea I-positive
+caesar B-neutral
+galea I-neutral
 is O
-quakers B-positive
-fire I-positive
-seventh I-positive
-victim I-positive
+quakers B-neutral
+fire I-neutral
+seventh I-neutral
+victim I-neutral
 ! O
 
-slower B-neutral
-credit I-neutral
+slower B-positive
+credit I-positive
 demand O
 supports O
 rate O
@@ -7520,18 +7520,18 @@ you're O
 listening O
 gill O
 
-spider B-neutral
+spider B-negative
 attack O
 - O
-national B-neutral
-geographic I-neutral
+national B-negative
+geographic I-negative
 photo O
 contest O
 2011 O
 - O
-national B-neutral
-geographic I-neutral
-http://t.co/8mxxeteh I-neutral
+national B-negative
+geographic I-negative
+http://t.co/8mxxeteh I-negative
 via O
 @natgeo O
 
@@ -7541,14 +7541,14 @@ is O
 now O
 accepted O
 as O
-fine B-negative
-art I-negative
+fine B-positive
+art I-positive
 - O
 not O
 the O
 official O
-apple B-negative
-accessory I-negative
+apple B-positive
+accessory I-positive
 though O
 ... O
 http://bit.ly/dwuv9s O
@@ -7569,8 +7569,8 @@ shared O
 by O
 on O
 
-brees B-neutral
-denies I-neutral
+brees B-negative
+denies I-negative
 knowledge O
 of O
 bounty O
@@ -7587,13 +7587,13 @@ youtube B-neutral
 . O
 http://t.co/li3rtapz O
 
-amy's B-neutral
+amy's B-negative
 middle O
 east O
 : O
-wave B-neutral
-of I-neutral
-dissatisfaction I-neutral
+wave B-negative
+of I-negative
+dissatisfaction I-negative
 among O
 iraqis O
 http://t.co/jhef9rz O
@@ -7613,7 +7613,7 @@ http O
 
 top O
 10 O
-twitter B-neutral
+twitter B-positive
 tips O
 that O
 could O
@@ -7630,7 +7630,7 @@ it O
 was O
 also O
 a O
-direct B-neutral
+direct B-positive
 result O
 of O
 a O
@@ -7640,7 +7640,7 @@ so O
 ... O
 http://t.co/bzv2d9as O
 
-@zandraaziela B-neutral
+@zandraaziela B-positive
 my O
 name O
 is O
@@ -7693,8 +7693,8 @@ a O
 @youtube O
 video O
 http://t.co/amsmt6nw O
-steven B-neutral
-klein I-neutral
+steven B-positive
+klein I-positive
 - O
 film O
 projects O
@@ -7709,9 +7709,9 @@ birthday O
 to O
 our O
 beauty O
-contributor B-neutral
-briquel I-neutral
-sherman I-neutral
+contributor B-positive
+briquel I-positive
+sherman I-positive
 ! O
 
 tony B-neutral
@@ -7739,9 +7739,9 @@ w O
 ... O
 http://t.co/scgb3nwj O
 
-teamwox B-neutral
-online I-neutral
-assistant I-neutral
+teamwox B-positive
+online I-positive
+assistant I-positive
 : O
 new O
 clients O
@@ -7757,14 +7757,14 @@ new O
 rudimental O
 feat O
 . O
-john B-neutral
-newman I-neutral
+john B-positive
+newman I-positive
 track O
 'feel O
 the O
-love' B-neutral
-. I-neutral
-http://t.co/goety69q I-neutral
+love' B-positive
+. I-positive
+http://t.co/goety69q I-positive
 summer O
 anthem O
 . O
@@ -7783,17 +7783,17 @@ tucson O
 massacre O
 â O
 : O
-zen B-neutral
-gardner I-neutral
+zen B-negative
+gardner I-negative
 | O
 it's O
 been O
 disgusting O
 watching O
 the O
-fallout B-neutral
-of I-neutral
-anot I-neutral
+fallout B-negative
+of I-negative
+anot I-negative
 ... O
 http://bit.ly/doae77 O
 
@@ -7852,17 +7852,17 @@ madness O
 at O
 the O
 #yyz O
-us B-neutral
-customs I-neutral
-port I-neutral
+us B-positive
+customs I-positive
+port I-positive
 of O
 entry O
 today O
 . O
 thank O
-god B-neutral
+god B-positive
 for O
-nexus B-neutral
+nexus B-positive
 . O
 took O
 30 O
@@ -7875,7 +7875,7 @@ ibn O
 : O
 iran O
 vs O
-eu B-neutral
+eu B-negative
 : O
 iraq O
 plays O
@@ -7886,11 +7886,11 @@ export O
 crisis O
 http://t.co/nofojw6i O
 
-@greysonchance B-neutral
+@greysonchance B-positive
 happy O
 new O
 year O
-greyson B-neutral
+greyson B-positive
 ! O
 i O
 & O
@@ -7926,8 +7926,8 @@ i O
 ( O
 miss O
 latina O
-martha B-neutral
-stuart I-neutral
+martha B-positive
+stuart I-positive
 ) O
 would O
 be O
@@ -7942,8 +7942,8 @@ crafty-cute-lovely-sexy O
 present O
 . O
 
-scarlett B-neutral
-johansson I-neutral
+scarlett B-positive
+johansson I-positive
 has O
 joined O
 the O
@@ -7954,7 +7954,7 @@ famous O
 actresses O
 who O
 also O
-direct B-neutral
+direct B-positive
 http://t.co/ei6cxfpf O
 
 i O
@@ -7967,10 +7967,10 @@ youtube B-neutral
 . O
 http://t.co/gubsw38s O
 
-ghazals B-neutral
+ghazals B-positive
 by O
-jagjit B-neutral
-singh I-neutral
+jagjit B-positive
+singh I-positive
 will O
 be O
 as O
@@ -7981,8 +7981,8 @@ ever O
 listen O
 to O
 the O
-ghazhal B-neutral
-maestro I-neutral
+ghazhal B-positive
+maestro I-positive
 ... O
 http://t.co/ridudhhs O
 
@@ -8022,15 +8022,15 @@ now O
 - O
 http://twb.ly/9fc2vu O
 
-waste B-neutral
+waste B-negative
 new O
 s: O
 mayor O
-bloomberg B-neutral
+bloomberg B-negative
 to O
-unveil B-neutral
-recycling I-neutral
-initiatives I-neutral
+unveil B-negative
+recycling I-negative
+initiatives I-negative
 for O
 nyc O
 http://t.co/qjcfocrv O
@@ -8052,10 +8052,10 @@ your O
 nipples O
 . O
 -- O
-albert B-neutral
-einstein I-neutral
+albert B-positive
+einstein I-positive
 
-@kaemkyu15 B-neutral
+@kaemkyu15 B-negative
 because O
 i O
 mostly O
@@ -8081,12 +8081,12 @@ my O
 bias O
 is O
 still O
-donghae B-neutral
+donghae B-negative
 ! O
 haha O
 ! O
 
-wilmington B-neutral
+wilmington B-positive
 new O
 media O
 makes O
@@ -8120,29 +8120,29 @@ is O
 of O
 canada O
 
-sponsor B-neutral
-http://t.co/fytehn4g I-neutral
+sponsor B-positive
+http://t.co/fytehn4g I-positive
 enjoy O
-sizzling B-neutral
-steak I-neutral
+sizzling B-positive
+steak I-positive
 with O
 the O
-family-t.g.i B-neutral
-. I-neutral
-fridays I-neutral
-entrees I-neutral
+family-t.g.i B-positive
+. I-positive
+fridays I-positive
+entrees I-positive
 at O
 home O
 - O
 with O
 friday's O
 new O
-frozen B-neutral
-entres I-neutral
+frozen B-positive
+entres I-positive
 ! O
 
-the B-neutral
-ghetto I-neutral
+the B-negative
+ghetto I-negative
 : O
 photo O
 by O
@@ -8158,21 +8158,21 @@ questions O
 from O
 katti O
 on O
-chillara B-neutral
-vishnu I-neutral
+chillara B-positive
+vishnu I-positive
 , O
-anybody B-neutral
-dare I-neutral
+anybody B-positive
+dare I-positive
 to O
 reply O
 to O
 him O
 ? O
 
-ihrdc B-neutral
+ihrdc B-positive
 founder O
-payam B-neutral
-akhavan I-neutral
+payam B-positive
+akhavan I-positive
 -- O
 canada O
 : O
@@ -8181,8 +8181,8 @@ of O
 choice O
 for O
 iran's O
-elite B-neutral
-http://t.co/al3v08s4 I-neutral
+elite B-positive
+http://t.co/al3v08s4 I-positive
 #iran O
 
 #africa O
@@ -8203,9 +8203,9 @@ http://tinyurl.com/24toaml O
 @ O
 barackobama O
 : O
-international B-neutral
-community I-neutral
-soft I-neutral
+international B-negative
+community I-negative
+soft I-negative
 words O
 must O
 end O
@@ -8254,15 +8254,15 @@ http://t.co/eaxlhgf O
 japan O
 braces O
 for O
-political B-neutral
-gridlock I-neutral
+political B-negative
+gridlock I-negative
 after O
-ruling B-neutral
-party I-neutral
+ruling B-negative
+party I-negative
 loss O
 - O
-deseret B-neutral
-news I-neutral
+deseret B-negative
+news I-negative
 http://tinyurl.com/28rs45o O
 
 cable B-neutral
@@ -8281,14 +8281,14 @@ http://t.co/friylxyl O
 was O
 the O
 new O
-apple B-neutral
+apple B-negative
 ipad O
 made O
 ethically O
 ? O
 : O
-apple B-neutral
-mania I-neutral
+apple B-negative
+mania I-negative
 took O
 over O
 the O
@@ -8320,10 +8320,10 @@ next O
 wednesday O
 http://is.gd/6qswkv O
 
-ibm B-neutral
+ibm B-positive
 and O
-hp B-neutral
-dominated I-neutral
+hp B-positive
+dominated I-positive
 server O
 sales O
 last O
@@ -8331,8 +8331,8 @@ quarter O
 : O
 ibm O
 and O
-hewlett-packard B-neutral
-remained I-neutral
+hewlett-packard B-positive
+remained I-positive
 the O
 top O
 tw O
@@ -8389,9 +8389,9 @@ on O
 arrival O
 : O
 by O
-julianne B-neutral
-pepitone I-neutral
-@cnnmoneytech I-neutral
+julianne B-negative
+pepitone I-negative
+@cnnmoneytech I-negative
 march O
 7 O
 , O
@@ -8404,10 +8404,10 @@ a O
 ... O
 http://t.co/7kkjcpn0 O
 
-95.5 B-neutral
-klos I-neutral
-southern I-neutral
-california's I-neutral
+95.5 B-positive
+klos I-positive
+southern I-positive
+california's I-positive
 best O
 rock O
 : O
@@ -8439,7 +8439,7 @@ collection O
 by O
 moleskine O
 
-@shinkyy B-negative
+@shinkyy B-positive
 no O
 , O
 he O
@@ -8447,11 +8447,11 @@ can't O
 .. O
 that's O
 why O
-bella B-negative
+bella B-positive
 called O
 him O
-spider B-negative
-monkey I-negative
+spider B-positive
+monkey I-positive
 .. O
 cuz O
 he's O
