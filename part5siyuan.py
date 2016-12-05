@@ -26,7 +26,7 @@ def train(type):
     count = [0] * 4
 
     ## read and parse file
-    train_file = open(type+'/iob.train', 'r')
+    train_file = open(type+'/train', 'r')
     u = 'START'
     obs_space = set()
 
@@ -35,6 +35,7 @@ def train(type):
             obs, v = line.split()
             obs = obs.strip().lower()
             v = v.strip()
+            v = v[0]
             position = dic[v]  ## position: 1~3
 
             # preprocessing of some special cases:
@@ -252,15 +253,18 @@ def getEffectivePosNegWords():
 def runPart3(type,obs_space, e_param, t_param, count):
     dev_file = open(type+'/dev.in', 'r')
     out_file = open(type+'/dev.p5.out', 'w')
+    #
+    # dev_file = open(type + '/test.in', 'r')
+    # out_file = open(type + '/test.p5.out', 'w')
     X = []
 
     effPosSet, effNegSet = getEffectivePosNegWords()
     globalPosSet, globalNegSet = getGlobalPosNegWords()
-    globalWeight = 0.5
+    globalWeight = 0.1
 
 
-    pp.pprint(effPosSet)
-    pp.pprint(effNegSet)
+    # pp.pprint(effPosSet)
+    # pp.pprint(effNegSet)
 
 
     for r in dev_file:
@@ -277,6 +281,7 @@ def runPart3(type,obs_space, e_param, t_param, count):
             for word in X:
                 if word in effPosSet:
                     isPos += effPosSet[word]
+
                     # print ("PosWord: "+word)
                 # elif word in globalPosSet:
                 #     isPos += globalWeight
@@ -303,7 +308,7 @@ def runPart3(type,obs_space, e_param, t_param, count):
                 sentiment = "-neutral"
 
             # hardcode sentiment to -neutral
-            sentiment = "-neutral"
+            # sentiment = "-neutral"
             for i in range(0, len(X)):
                 if Y[i] == 'O':
                     out_file.write('' + X[i] + " " + Y[i] + '\n')

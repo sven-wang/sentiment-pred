@@ -117,6 +117,10 @@ def sentimentTrain():
         try:
             obs, v = obs.split()
             obs = obs.strip().lower()
+
+            if obs[:7]=='http://':
+                obs = 'http://'
+
             v = v.strip()
             # collect all the words in sentence
             if (obs not in meaningless_set):
@@ -151,7 +155,76 @@ def sentimentTrain():
     return dic_words
 
 
-############################### Part 3 ######################################
+############################### Sentiment Training ######################################
+
+
+def getGlobalPosNegWords():
+    posSet = set()
+    negSet = set()
+    pos_file = open("wordSent/" + "positive-words.txt", 'r')
+    neg_file = open("wordSent/" + "negative-words.txt", 'r')
+
+    for line in pos_file:
+        line = line.strip()
+        if line:
+            if line[0] != ';':
+                posSet.add(line)
+
+    for line in neg_file:
+        line = line.strip()
+        if line:
+            if line[0] != ';':
+                negSet.add(line)
+    # print (posSet)
+    # print (negSet)
+
+    return posSet, negSet
+
+def getEffectivePosNegWords():
+    dic_sentiment = {'negative': 0, 'neutral': 1, 'positive': 2}
+    posSet, negSet = getGlobalPosNegWords()
+    train_file = open('train_EN', 'r')
+    # not_flag = False
+    sentiment_score = 0  # initialize neutral sentiment
+    X = []
+
+    effectivePosDict = {}
+    effectiveNegDict = {}
+
+    for obs in train_file:
+        try:
+            obs, v = obs.split()
+            obs = obs.strip().lower()
+            v = v.strip()
+            # collect all the words in sentence
+            X.append(obs)
+            # calculate the sentiment of the sentence: negative: -1 netrual: 0 positive: +1
+            if (v[0] == 'B'):
+                sentiment_score += dic_sentiment[v.split('-')[1]] - 1
+        except:
+            # meaning the end of a sentence
+            if (sentiment_score > 0):
+                for w in X:
+                    if w in posSet:
+                        if w in effectivePosDict:
+                            effectivePosDict[w] += 1
+                        else:
+                            effectivePosDict[w] = 1
+
+            elif (sentiment_score < 0):
+                for w in X:
+                    if w in negSet:
+                        if w in effectiveNegDict:
+                            effectiveNegDict[w] += 1
+                        else:
+                            effectiveNegDict[w] = 1
+            X = []
+            sentiment_score = 0
+            # not_flag = False
+    return effectivePosDict, effectiveNegDict
+
+############################## Decoding ######################################
+
 
 def forward(preScore, x):
     """inputs: preScore: list of (pre_score real_num, pre_parent int)
@@ -176,7 +249,7 @@ def forward(preScore, x):
     return layer
 
 
-def viterbiAlgo(X, dic_words):
+def viterbiAlgo(X, dic_words, effPosSet, effNegSet):
     """input: X, words list
        output: Y, sentiment list
     """
@@ -226,15 +299,24 @@ def viterbiAlgo(X, dic_words):
         w = w.lower()
         # if (w in not_set):
         #   not_flag = not not_flag
-        if (not_flag & (w in dic_words)):
-            for i in range(0, 3):
-                sentiment_score[i] -= dic_words[w][i]  # /(dic_words[w][0]+dic_words[w][1]+dic_words[w][2])
-        elif (w in dic_words):
+
+        if (w in dic_words):
+            if sum(dic_words[w]) < 3:
+                continue
+            elif sum(dic_words[w]) > 50:
+                continue
+
+            if w in effPosSet:
+                sentiment_score[2] += effPosSet[w]
+            if w in effNegSet:
+                sentiment_score[0] += effNegSet[w]
+
             for i in range(0, 3):
                 sentiment_score[i] += dic_words[w][i]  # /(dic_words[w][0]+dic_words[w][1]+dic_words[w][2])
 
     max_sentiment = max(sentiment_score)
     sentiment = l_sentiment[sentiment_score.index(max_sentiment)]
+    # sentiment = "neutral"
     for i in range(0, len(Y)):
         if (Y[i] != 'O'):
             Y[i] += '-' + sentiment
@@ -245,13 +327,15 @@ def viterbiAlgo(X, dic_words):
 def runPart3(obs_space, e_param, t_param, count, dic_words):
     dev_file = open('dev_EN.in', 'r')
     out_file = open('dev_EN.p5_noNegation.out', 'w')
+
+    effPosSet, effNegSet = getEffectivePosNegWords()
     X = []
     for r in dev_file:
         r = r.strip().lower()
 
         if (r == ''):
             # end of a sequence
-            Y = viterbiAlgo(X, dic_words)
+            Y = viterbiAlgo(X, dic_words, effPosSet, effNegSet)
             for i in range(0, len(X)):
                 out_file.write('' + X[i] + " " + Y[i] + '\n')
             out_file.write('\n')
@@ -265,5 +349,7 @@ def runPart3(obs_space, e_param, t_param, count, dic_words):
 
 obs_space, e_param, t_param, count = train()
 dic_words = sentimentTrain()
+
+pp.pprint(dic_words)
 runPart3(obs_space, e_param, t_param, count, dic_words)
 print("finish!")
