@@ -6,6 +6,15 @@ dic = {'START': 0, 'B': 1, 'I': 2, 'O': 3, 'STOP': 4}
 l = ['START', 'B', 'I', 'O', 'STOP']
 negationWords = {'not', 'no'}
 
+def preprocess(word):
+    if 'http://' in word or 'https://' in word:
+        word = 'http://'
+    # elif 'xc3' in word:
+    #     word = "xcsChar"
+    elif 'www.' in word:
+        word = 'www.'
+    return word
+
 def train(type):
     ############################# initialize parameter ####################################
 
@@ -39,8 +48,7 @@ def train(type):
             position = dic[v]  ## position: 1~3
 
             # preprocessing of some special cases:
-            if obs[:7]=='http://':
-                obs = 'http://'
+            obs = preprocess(obs)
             # update e_count
             if (obs in e_count[position]):
                 e_count[position][obs] += 1
@@ -94,26 +102,6 @@ def train(type):
 
     return obs_space, e_param, t_param, count
 
-
-############################################## PART 2 ###############################################
-def runPart2(type,obs_space, e_param, count):
-    dev_file = open(type+'/dev.in','r')
-    output_file = open(type+'/dev.p2.out','w')
-    for o in dev_file:
-        o = o.strip()
-        if (o== ''):
-            output_file.write('\n')
-            continue
-        temp_list = []
-        #y* = argmax(e(x|y))
-        for j in range(1,4):
-            if (o in obs_space):
-                temp_list.append(e_param[j][o])
-            else:
-                temp_list.append(1.0/count[j])
-        max_value = max(temp_list)
-        max_index = temp_list.index(max_value)   # 0-6
-        output_file.write(o + " " + l[max_index+1] + '\n') # 1-7
 
 
 ############################### Part 3 ######################################
@@ -187,8 +175,10 @@ def viterbiAlgo(X):
 def getGlobalPosNegWords():
     posSet = set()
     negSet = set()
-    pos_file = open("wordSent/" + "positive-words.txt", 'r')
-    neg_file = open("wordSent/" + "negative-words.txt", 'r')
+    pos_file = open(type + "/positive-words.txt", 'r')
+    neg_file = open(type + "/negative-words.txt", 'r')
+
+
 
     for line in pos_file:
         line = line.strip()
@@ -209,7 +199,7 @@ def getGlobalPosNegWords():
 def getEffectivePosNegWords():
     dic_sentiment = {'negative': 0, 'neutral': 1, 'positive': 2}
     posSet, negSet = getGlobalPosNegWords()
-    train_file = open('train_EN', 'r')
+    train_file = open(type + '/train', 'r')
     # not_flag = False
     sentiment_score = 0  # initialize neutral sentiment
     X = []
@@ -318,15 +308,15 @@ def runPart3(type,obs_space, e_param, t_param, count):
             X = []
         else:
             # preprocessing of some special cases:
-            if r[:7]=='http://':
-                r = 'http://'
+            r = preprocess(r)
             X.append(r)
 
 
 # for type in ["EN", "CN", "SG", "ES"]:
-for type in [ "EN_BIO"]:
+for type in [ "EN", "ES"]:
     print "Doing " + type
     obs_space, e_param, t_param, count = train(type)
+    pp.pprint(obs_space)
     # runPart2(type,obs_space, e_param, count)
     runPart3(type,obs_space, e_param, t_param, count)
 
