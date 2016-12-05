@@ -23,3 +23,35 @@ Part 5 improvement log
 3. Methods to improve Sentiment Prediction
     3.1 TODO:Yujia's method
     3.2 effective polar words with counts
+
+
+Record time: 11pm, Mon 5/12
+=============== PART 5 ==============
+=============== EN ==============
+
+#Entity in gold data: 662
+#Entity in prediction: 732
+
+#Correct Entity : 267
+Entity  precision: 0.3648
+Entity  recall: 0.4033
+Entity  F: 0.3831
+
+#Correct Sentiment : 202
+Sentiment  precision: 0.2760
+Sentiment  recall: 0.3051
+Sentiment  F: 0.2898
+=============== ES ==============
+
+#Entity in gold data: 1326
+#Entity in prediction: 1404
+
+#Correct Entity : 504
+Entity  precision: 0.3590
+Entity  recall: 0.3801
+Entity  F: 0.3692
+
+#Correct Sentiment : 306
+Sentiment  precision: 0.2179
+Sentiment  recall: 0.2308
+Sentiment  F: 0.2242

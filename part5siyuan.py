@@ -13,6 +13,14 @@ def preprocess(word):
     #     word = "xcsChar"
     elif 'www.' in word:
         word = 'www.'
+    #
+    elif any(char.isdigit() for char in word):
+        word = '***numbers***'
+    # no use
+    # elif '?' in word:
+    #     word = '??'
+    # elif '!' in word:
+    #     word = '!!'
     return word
 
 def train(type):
