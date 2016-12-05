@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae0d4fde-d1d9-4e15-addc-116c4c0b0019" name="Default" comment="added ES globalPolarWords. EN: f=0.2818; ES: f= 0.2235">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EN/negative-words.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EN/positive-words.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ES/negative-words.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ES/positive-words.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordSent/es-negative-words.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordSent/es-positive-words.txt" />
+    <list default="true" id="ae0d4fde-d1d9-4e15-addc-116c4c0b0019" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EN_BIO/dev.p5.out" afterPath="$PROJECT_DIR$/EN_BIO/dev.p5.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part5siyuan.py" afterPath="$PROJECT_DIR$/part5siyuan.py" />
     </list>
     <ignored path="sentiment-pred.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -659,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480945043855</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added ES globalPolarWords. EN: f=0.2818; ES: f= 0.2235">
+      <created>1480947862401</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1480947862401</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -676,7 +675,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21086262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5021882" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
