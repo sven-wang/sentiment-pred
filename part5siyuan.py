@@ -1,3 +1,5 @@
+import io
+import unicodedata
 import pprint
 pp = pprint.PrettyPrinter(indent=5)
 
@@ -7,6 +9,8 @@ l = ['START', 'B', 'I', 'O', 'STOP']
 negationWords = {'not', 'no'}
 
 def preprocess(word):
+    word = word.decode('utf-8')
+    word = unicodedata.normalize('NFKD', word).encode('ascii', 'ignore')
     if 'http://' in word or 'https://' in word:
         word = 'http://'
     # elif 'xc3' in word:
@@ -43,7 +47,7 @@ def train(type):
     count = [0] * 4
 
     ## read and parse file
-    train_file = open(type+'/train', 'r')
+    train_file = io.open(type+'/train', 'rb')
     u = 'START'
     obs_space = set()
 
@@ -207,7 +211,7 @@ def getGlobalPosNegWords():
 def getEffectivePosNegWords():
     dic_sentiment = {'negative': 0, 'neutral': 1, 'positive': 2}
     posSet, negSet = getGlobalPosNegWords()
-    train_file = open(type + '/train', 'r')
+    train_file = io.open(type + '/train', 'rb')
     # not_flag = False
     sentiment_score = 0  # initialize neutral sentiment
     X = []
@@ -249,11 +253,11 @@ def getEffectivePosNegWords():
 
 
 def runPart3(type,obs_space, e_param, t_param, count):
-    dev_file = open(type+'/dev.in', 'r')
-    out_file = open(type+'/dev.p5.out', 'w')
+    dev_file = io.open(type+'/dev.in', 'rb')
+    out_file = io.open(type+'/dev.p5.out', 'wb')
     #
-    # dev_file = open(type + '/test.in', 'r')
-    # out_file = open(type + '/test.p5.out', 'w')
+    # dev_file = io.open(type + '/test.in', 'rb')
+    # out_file = io.open(type + '/test.p5.out', 'w')
     X = []
 
     effPosSet, effNegSet = getEffectivePosNegWords()

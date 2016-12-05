@@ -109,7 +109,7 @@ pet B-neutral
 bloggers I-neutral
 blog O
 hop O
-â O
+a O
 two O
 little O
 cavaliers O
@@ -337,7 +337,7 @@ twitter B-neutral
 surrenders I-neutral
 one O
 user O
-â O
+a O
 s O
 data O
 to O
@@ -417,7 +417,7 @@ hard O
 work O
 :) O
 
-Ã¢ÂÂ O
+AAA O
 an O
 eye O
 for O
@@ -431,7 +431,7 @@ whole O
 world B-neutral
 blind I-neutral
 . O
-Ã¢ÂÂ O
+AAA O
 mohatma B-neutral
 gandhi I-neutral
 . O
@@ -820,7 +820,7 @@ my B-negative
 friend I-negative
 "mike" I-negative
 . O
-Â O
+A O
 things O
 have O
 gotten O
@@ -1304,7 +1304,7 @@ d: I-neutral
 cherokee I-neutral
 rose I-neutral
 http:// O
-vÃ­a O
+vAa O
 @cuevana O
 
 tesco B-neutral
@@ -1413,7 +1413,7 @@ temple O
 of O
 food O
 
-â O
+a O
 sometimes O
 , O
 the O
@@ -1423,9 +1423,9 @@ prejudice O
 is O
 education O
 . O
-â O
-â B-neutral
-liza I-neutral
+a O
+a O
+liza B-neutral
 mundy I-neutral
 , O
 
@@ -1473,7 +1473,7 @@ your O
 fucking O
 retarded B-neutral
 xddd I-neutral
-â O
+a O
 retar B-neutral
 d: I-neutral
 propane I-neutral
@@ -1901,7 +1901,7 @@ install O
 played O
 a O
 song O
-canciÃ³n O
+***numbers*** O
 ***numbers*** O
 by O
 ***numbers*** O
@@ -2007,7 +2007,7 @@ via O
 @ O
 fotonah O
 : O
-â O
+a O
 life O
 is O
 a O
@@ -2016,7 +2016,7 @@ song O
 sing O
 it O
 . O
-â O
+a O
 " O
 
 facebook B-neutral
@@ -2083,7 +2083,7 @@ for O
 windows O
 new O
 feature O
-â O
+a O
 post O
 to O
 twitter B-neutral
@@ -2417,7 +2417,7 @@ of O
 the O
 earth O
 http:// O
-vÃÂ­a O
+vAAa O
 @youtube O
 
 job O
@@ -3192,7 +3192,7 @@ study O
 http:// O
 on O
 india O
-â O
+a O
 s O
 record O
 : O
@@ -3250,7 +3250,7 @@ http:// O
 
 chief O
 minister O
-â O
+a O
 s O
 office O
 ( O
@@ -3391,7 +3391,7 @@ a O
 coaching O
 session O
 with O
-â¦ O
+a O
 http:// O
 
 when O
@@ -3532,17 +3532,17 @@ ranking O
 ! O
 http:// O
 
-â O
+a O
 diplomacy O
 is O
 the O
 art O
 of O
 saying O
-â O
+a O
 nice O
 doggie O
-â O
+a O
 until O
 you O
 can O
@@ -3550,8 +3550,8 @@ find O
 a O
 rock O
 . O
-â O
-â O
+a O
+a O
 will O
 rogers O
 
@@ -4110,8 +4110,8 @@ move O
 to O
 arsenal B-neutral
 : O
-â¢ B-neutral
-kÃ¶ln I-neutral
+a O
+kAln B-neutral
 striker I-neutral
 desperate I-neutral
 to O
@@ -4303,7 +4303,7 @@ http:// O
 
 how O
 pinterest B-neutral
-â I-neutral
+a O
 s O
 female O
 audience O
@@ -5574,7 +5574,7 @@ planet O
 earth O
 . O
 
-â@mashable: B-neutral
+a@mashable: B-neutral
 only O
 ***numbers*** O
 of O
@@ -5617,7 +5617,7 @@ need O
 
 pricele B-negative
 ss: O
-â O
+a O
 @ O
 nachofiesta O
 : O
@@ -5636,7 +5636,7 @@ characters O
 per O
 tweet O
 . O
-â O
+a O
 
 reach O
 high O
@@ -5755,7 +5755,7 @@ announced O
 at O
 scientific B-neutral
 council I-neutral
-â O
+a O
 s O
 fifth O
 session O
@@ -6025,7 +6025,7 @@ proud O
 turkish O
 & O
 have O
-erdoÄan O
+erdoAan O
 as O
 pm O
 . O
@@ -6235,7 +6235,7 @@ mos B-neutral
 def I-neutral
 #nowplaying O
 http:// O
-vÃÂ­a O
+vAAa O
 @grooveshark O
 
 i O
@@ -6285,7 +6285,7 @@ what O
 you O
 want O
 http:// O
-vÃ­a O
+vAa O
 @youtube O
 
 to O
@@ -6519,7 +6519,7 @@ your O
 article O
 submission O
 process O
-â O
+a O
 ***numbers*** O
 simple O
 technique B-neutral
@@ -6529,7 +6529,7 @@ by O
 jerret O
 turner O
 you O
-â O
+a O
 ve O
 written O
 your O
@@ -6837,7 +6837,7 @@ spending I-neutral
 to O
 spur B-neutral
 jobs I-neutral
-â O
+a O
 businessweek B-neutral
 http:// O
 
@@ -6889,13 +6889,13 @@ federal B-neutral
 construction I-neutral
 spending I-neutral
 doesn I-neutral
-â I-neutral
-t I-neutral
-translate I-neutral
+a O
+t O
+translate O
 to O
 gdp O
 growth O
-â O
+a O
 reuters B-neutral
 blogs O
 http:// O
@@ -6903,10 +6903,10 @@ http:// O
 state B-neutral
 naacp I-neutral
 endorses I-neutral
-â O
+a O
 parent B-neutral
 trigger I-neutral
-â O
+a O
 | O
 thoughts O
 on O
@@ -7456,12 +7456,12 @@ via O
 twitter B-neutral
 http:// O
 
-âbamdad B-neutral
+abamdad B-neutral
 | O
 will O
 # O
 iec O
-â O
+a O
 s O
 decision O
 put O
@@ -7470,7 +7470,7 @@ end O
 to O
 # O
 afghanistan O
-â O
+a O
 s O
 political O
 crisis O
@@ -7557,9 +7557,9 @@ http:// O
 ***numbers*** O
 things O
 you O
-didn B-neutral
-â I-neutral
-t I-neutral
+didn O
+a O
+t O
 know O
 about O
 steve B-neutral
@@ -7779,9 +7779,9 @@ reasons O
 for O
 the O
 tucson O
-â O
+a O
 massacre O
-â O
+a O
 : O
 zen B-neutral
 gardner I-neutral
@@ -8199,7 +8199,7 @@ tour O
 ... O
 http:// O
 
-Ã¢ÂÂ O
+AAA O
 @ O
 barackobama O
 : O
