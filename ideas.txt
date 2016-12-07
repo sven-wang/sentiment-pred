@@ -103,11 +103,23 @@ b_notInSpace = 0
 Entity  F: 0.3007
 Sentiment  F: 0.2116
 
+b_inSpace = 0.1
+b_notInSpace = 1
+Entity  F: 0.3402
+Sentiment  F: 0.2480
+
+
 === No Preprocessing T=20 ===
 b_inSpace = 0.5
 b_notInSpace = 1
 Entity  F: 0.3043
 Sentiment  F: 0.2205
+
+b_inSpace = 0
+b_notInSpace = 0
+Entity  F: 0.2870
+Sentiment  F: 0.1921
+
 
 
 

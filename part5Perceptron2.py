@@ -16,8 +16,8 @@ obs_space = set()
 a = 11
 t_param = np.zeros((11, 11, 11))
 
-b_inSpace = 0
-b_notInSpace = 0
+b_inSpace = 0.1
+b_notInSpace = 1
 # num of iteration over the training set
 T = 20
 

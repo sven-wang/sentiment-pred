@@ -17,9 +17,9 @@ a = 11
 t_param = np.zeros((11, 11, 11))
 
 b_inSpace = 0.1
-b_notInSpace = 1
+b_notInSpace = 1   # 1/count+1
 # num of iteration over the training set
-T = 20
+T = 30
 
 
 def preprocess(word):
