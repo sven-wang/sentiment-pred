@@ -55,3 +55,60 @@ Entity  F: 0.3692
 Sentiment  precision: 0.2179
 Sentiment  recall: 0.2308
 Sentiment  F: 0.2242
+
+
+=== Perceptron for NER-Sentiment without preprocessing ===
+SiyuanDeMBP:sentiment-pred WSY$ python evalResult.py EN/dev.out EN/dev.perceptronNoProc.out
+
+#Entity in gold data: 662
+#Entity in prediction: 245
+
+#Correct Entity : 138
+Entity  precision: 0.5633
+Entity  recall: 0.2085
+Entity  F: 0.3043
+
+#Correct Sentiment : 100
+Sentiment  precision: 0.4082
+Sentiment  recall: 0.1511
+Sentiment  F: 0.2205
+
+
+=== With preprocessing ===
+
+SiyuanDeMBP:sentiment-pred WSY$ python evalResult.py EN/dev.out EN/dev.perceptron.BIO.out
+
+#Entity in gold data: 662
+#Entity in prediction: 185
+
+#Correct Entity : 120
+Entity  precision: 0.6486
+Entity  recall: 0.1813
+Entity  F: 0.2834
+
+#Correct Sentiment : 95
+Sentiment  precision: 0.5135
+Sentiment  recall: 0.1435
+Sentiment  F: 0.2243
+
+
+=== tuning T=20 ===
+b_inSpace = 0.5
+b_notInSpace = 1
+Entity  F: 0.2617
+Sentiment  F: 0.2009
+
+b_inSpace = 0
+b_notInSpace = 0
+Entity  F: 0.3007
+Sentiment  F: 0.2116
+
+=== No Preprocessing T=20 ===
+b_inSpace = 0.5
+b_notInSpace = 1
+Entity  F: 0.3043
+Sentiment  F: 0.2205
+
+
+
+

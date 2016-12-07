@@ -9,6 +9,7 @@ l = ['START', 'B', 'I', 'O', 'STOP']
 negationWords = {'not', 'no'}
 
 def preprocess(word):
+    word = word.lower()
     word = word.decode('utf-8')
     word = unicodedata.normalize('NFKD', word).encode('ascii', 'ignore')
     if 'http://' in word or 'https://' in word:
@@ -54,7 +55,7 @@ def train(type):
     for line in train_file:
         try:
             obs, v = line.split()
-            obs = obs.strip().lower()
+            obs = obs.strip()
             v = v.strip()
             v = v[0]
             position = dic[v]  ## position: 1~3
@@ -222,7 +223,8 @@ def getEffectivePosNegWords():
     for obs in train_file:
         try:
             obs, v = obs.split()
-            obs = obs.strip().lower()
+            obs = obs.strip()
+            obs = preprocess(obs)
             v = v.strip()
             # collect all the words in sentence
             X.append(obs)
@@ -270,7 +272,8 @@ def runPart3(type,obs_space, e_param, t_param, count):
 
 
     for r in dev_file:
-        r = r.strip().lower()
+        r = r.strip()
+
         if (r == ''):
             # end of a sequence
             Y = viterbiAlgo(X)
