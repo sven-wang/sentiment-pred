@@ -30,9 +30,20 @@ $ python part5.py
 
 By default, input: dev.in, output: dev.p5.out
 
+
 Method 2: NER + Sentiment
 
 $ python part5Perceptron.py
 By default, input: dev.in, output: dev.perceptron.out
+
+********* OutputFiles ********
+
+All required outpufiles are in the respective folders under /OutputFiles
+
+We did 2 approaches for Part 5.
+The second approach (perceptron) test output file is called test.perceptron.out to differentiate
+
+Thank you!
+
 
 
