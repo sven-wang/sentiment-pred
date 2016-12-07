@@ -1,5 +1,6 @@
 import numpy as np
 import unicodedata
+import sys
 ############################# initialize parameter ####################################
 dic = {'PRESTART': 0, 'START': 1, 'B-positive': 2, 'I-positive': 3, 'B-neutral': 4,
        'I-neutral': 5,'B-negative': 6,'I-negative': 7,'O': 8, 'STOP': 9, 'POSTSTOP': 10}
@@ -16,8 +17,8 @@ obs_space = set()
 a = 11
 t_param = np.zeros((11, 11, 11))
 
-b_inSpace = 0.1
-b_notInSpace = 1
+b_inSpace = float
+b_notInSpace = 0.5
 # num of iteration over the training set
 T = 20
 

@@ -328,7 +328,7 @@ def runPart3(type,obs_space, e_param, t_param, count):
 
 
 # for type in ["EN", "CN", "SG", "ES"]:
-for type in [ "EN_test"]:
+for type in [ "EN_test",'ES_test']:
     print "Doing " + type
     obs_space, e_param, t_param, count = train(type)
     pp.pprint(obs_space)

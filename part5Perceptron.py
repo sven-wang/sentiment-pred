@@ -1,5 +1,6 @@
 import numpy as np
 import unicodedata
+import sys
 ############################# initialize parameter ####################################
 dic = {'PRESTART': 0, 'START': 1, 'B-positive': 2, 'I-positive': 3, 'B-neutral': 4,
        'I-neutral': 5,'B-negative': 6,'I-negative': 7,'O': 8, 'STOP': 9, 'POSTSTOP': 10}
@@ -16,10 +17,10 @@ obs_space = set()
 a = 11
 t_param = np.zeros((11, 11, 11))
 
-b_inSpace = 0.1
-b_notInSpace = 1   # 1/count+1
+b_inSpace = float(sys.argv[1])
+b_notInSpace = float(sys.argv[2])  # 1/count+1
 # num of iteration over the training set
-T = 30
+T = 20
 
 
 def preprocess(word):
@@ -166,7 +167,7 @@ def train():
     ############################# initialize parameter ####################################
 
     for trainStep in range(T):
-        print ('Iteration: ', trainStep)
+        # print ('Iteration: ', trainStep)
         ## read and parse file
         train_file = open('train_EN', 'r')
         Ygold = ['PRESTART', 'START']
@@ -220,6 +221,6 @@ def runPerceptron(type):
 
 train()
 runPerceptron('EN')
-print(e_param)
-print(obs_space)
-print(t_param)
+# print(e_param)
+# print(obs_space)
+# print(t_param)
