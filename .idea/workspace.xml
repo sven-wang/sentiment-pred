@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0d4fde-d1d9-4e15-addc-116c4c0b0019" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/EN/test.preceptron.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/ES/test.Perceptron.out" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OutputFiles/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/EN/test.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/ES/test.in" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EN_test/test.out" afterPath="$PROJECT_DIR$/EN_test/test.preceptron.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ES_test/test.out" afterPath="$PROJECT_DIR$/ES_test/test.Perceptron.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/eval.sh" afterPath="$PROJECT_DIR$/Attempts/eval.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/finalEval.sh" afterPath="$PROJECT_DIR$/Attempts/finalEval.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/part5Perceptron2.py" afterPath="$PROJECT_DIR$/Attempts/part5Perceptron2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/part5siyuan.py" afterPath="$PROJECT_DIR$/part5.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tune.sh" afterPath="$PROJECT_DIR$/Attempts/tune.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tune_output.txt" afterPath="$PROJECT_DIR$/Attempts/tune_output.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EN/dev.p5.perceptron.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EN/dev.perceptron.BIO.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EN/dev.perceptronNoProc.out" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part5Perceptron.py" afterPath="$PROJECT_DIR$/part5Perceptron.py" />
     </list>
     <ignored path="sentiment-pred.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,18 +38,7 @@
     <favorites_list name="sentiment-pred" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -187,7 +163,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="OutputFiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="EN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-pred" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-pred" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OutputFiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -896,7 +894,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481088817525</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="final submission">
+      <created>1481089508106</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1481089508106</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -910,9 +915,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5021882" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -982,7 +987,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cleaned up files and added screenshots of output comparison" />
     <MESSAGE value="index out of range for ES" />
     <MESSAGE value="no problem now" />
     <MESSAGE value="tried out some (not useful)stuff and added IDEAS for part5" />
@@ -1007,7 +1011,8 @@
     <MESSAGE value="Submission" />
     <MESSAGE value="test.out added into final submission" />
     <MESSAGE value="updated output files" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated output files" />
+    <MESSAGE value="final submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="final submission" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1387,8 +1392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="115">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
