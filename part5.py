@@ -255,12 +255,12 @@ def getEffectivePosNegWords():
 
 
 def runPart3(type,obs_space, e_param, t_param, count):
-    # dev_file = io.open(type+'/dev.in', 'rb')
-    # out_file = io.open(type+'/dev.p5.out', 'wb')
+    dev_file = io.open(type+'/dev.in', 'rb')
+    out_file = io.open(type+'/dev.p5.out', 'wb')
 
-
-    dev_file = io.open(type + '/test.in', 'rb')
-    out_file = io.open(type + '/test.out', 'wb')
+    #
+    # dev_file = io.open(type + '/test.in', 'rb')
+    # out_file = io.open(type + '/test.out', 'wb')
 
     X = []
 
@@ -329,8 +329,8 @@ def runPart3(type,obs_space, e_param, t_param, count):
             X.append(r)
 
 
-# for type in ["EN", "CN", "SG", "ES"]:
-for type in [ "EN_test",'ES_test']:
+for type in ["EN", "ES"]:
+# for type in [ "EN_test",'ES_test']:
     print "Doing " + type
     obs_space, e_param, t_param, count = train(type)
     pp.pprint(obs_space)

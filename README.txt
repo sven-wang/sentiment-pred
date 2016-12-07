@@ -5,25 +5,34 @@
 * Date: 7/12/2016
 */
 
-*********** Part 2/3/4 **********
-To run the program, open up terminal and navigate to the directory where this program is saved.
+*********** Part 2 & 3 **********
+This program runs EN,ES,CN,SG for Part 2 and 3 altogether
 
-Ensure that the necessary files (train, dev.in) are saved in the same directory as the program.
+To run the program, open up terminal and navigate to the directory where this program is saved. Ensure that there are subfolders named: EN, ES, CN, and SG
 
-Enter command: 
-    python part<X>.py <train_file> <dev_file> <output_file_name>
+Enter command: python part2&3.py
 
-E.g.: To run part 2 for EN: 
-         cd EN/
-         python part2.py train dev.in dev.p2.out
+The output file will be generated in their respective folder with file name dev.p2.out/dev.p3.out
 
-The output file will be generated in the same directory as the program
+*********** Part 4 **********
+This program runs EN,ES for Part 4
+
+To run the program, open up terminal and navigate to the directory where this program is saved.Ensure that there are subfolders named: EN and ES
+
+Enter command: python part4.py
+
+The output file will be generated in their respective folder with file name dev.p4.out
 
 *********** Part 5 **********
 Method 1: HMM + Perceptron
 
+$ python part5.py
 
+By default, input: dev.in, output: dev.p5.out
 
 Method 2: NER + Sentiment
+
+$ python part5Perceptron.py
+By default, input: dev.in, output: dev.perceptron.out
 
 

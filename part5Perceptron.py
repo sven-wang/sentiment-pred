@@ -198,10 +198,10 @@ def train(type):
 
 
 def runPerceptron(type):
-    # dev_file = open(type+'/dev.in', 'r')
-    # out_file = open(type+'/dev.perceptron.out', 'w')
-    dev_file = open(type+'/test.in', 'r')
-    out_file = open(type+'/test.out', 'w')
+    dev_file = open(type+'/dev.in', 'r')
+    out_file = open(type+'/dev.perceptron.out', 'w')
+    # dev_file = open(type+'/test.in', 'r')
+    # out_file = open(type+'/test.out', 'w')
     X = []
     for r in dev_file:
         r = r.strip()
@@ -222,7 +222,8 @@ def runPerceptron(type):
 #             ['PRESTART', 'START', 'O', 'O', 'O', 'O', 'STOP', 'POSTSTOP'])
 # viterbiAlgo(['New', 'Year',','])
 
-for type in ['ES_test','EN_test']:
+# for type in ['ES_test','EN_test']:
+for type in ['ES', 'EN']:
     train(type)
     runPerceptron(type)
 # print(e_param)

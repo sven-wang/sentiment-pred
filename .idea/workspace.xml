@@ -2,34 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0d4fde-d1d9-4e15-addc-116c4c0b0019" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/EN/dev.p2.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/EN/dev.p4.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/EN/dev.p5.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/ES/dev.p2.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/ES/dev.p4.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/ES/dev.p5.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/SG/dev.p2.out" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/CN/dev.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/CN/dev.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/CN/train" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/EN/dev.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/EN/dev.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/EN/train" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/ES/dev.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/ES/dev.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/ES/train" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/SG/dev.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/SG/dev.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Submission/SG/train" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/CN/dev.p2.out" afterPath="$PROJECT_DIR$/OutputFiles/CN/dev.p2.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/CN/dev.p3.out" afterPath="$PROJECT_DIR$/OutputFiles/CN/dev.p3.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/EN/dev.out" afterPath="$PROJECT_DIR$/OutputFiles/EN/dev.p3.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/EN/test.out" afterPath="$PROJECT_DIR$/OutputFiles/EN/test.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/ES/dev.out" afterPath="$PROJECT_DIR$/OutputFiles/ES/dev.p3.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/ES/test.out" afterPath="$PROJECT_DIR$/OutputFiles/ES/test.out" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/README.txt" afterPath="$PROJECT_DIR$/OutputFiles/README.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final Submission/SG/dev.out" afterPath="$PROJECT_DIR$/OutputFiles/SG/dev.p3.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/EN/test.preceptron.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutputFiles/ES/test.Perceptron.out" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OutputFiles/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/EN/test.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/ES/test.in" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/EN_test/test.out" afterPath="$PROJECT_DIR$/EN_test/test.preceptron.out" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ES_test/test.out" afterPath="$PROJECT_DIR$/ES_test/test.Perceptron.out" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/eval.sh" afterPath="$PROJECT_DIR$/Attempts/eval.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/finalEval.sh" afterPath="$PROJECT_DIR$/Attempts/finalEval.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/part5Perceptron2.py" afterPath="$PROJECT_DIR$/Attempts/part5Perceptron2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/part5siyuan.py" afterPath="$PROJECT_DIR$/part5.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tune.sh" afterPath="$PROJECT_DIR$/Attempts/tune.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tune_output.txt" afterPath="$PROJECT_DIR$/Attempts/tune_output.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/part5Perceptron.py" afterPath="$PROJECT_DIR$/part5Perceptron.py" />
     </list>
     <ignored path="sentiment-pred.iws" />
@@ -64,56 +52,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="part5Perceptron.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part5Perceptron.py">
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2895">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part5siyuan.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part5siyuan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2445">
-              <caret line="165" column="14" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+            <state relative-caret-position="390">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev.p2.out" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OutputFiles/ES/dev.p2.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev.p2.out" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OutputFiles/SG/dev.p2.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part5Perceptron2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part5Perceptron2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,7 +103,10 @@
         <option value="$PROJECT_DIR$/tune_output.txt" />
         <option value="$PROJECT_DIR$/tune.sh" />
         <option value="$PROJECT_DIR$/part5siyuan.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/part5.py" />
         <option value="$PROJECT_DIR$/part5Perceptron.py" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -216,6 +163,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-pred" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-pred" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OutputFiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-pred" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sentiment-pred" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -236,9 +211,9 @@
       <recent name="$PROJECT_DIR$/EN" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/OutputFiles/SG" />
-      <recent name="$PROJECT_DIR$/OutputFiles/ES" />
       <recent name="$PROJECT_DIR$/OutputFiles/EN" />
+      <recent name="$PROJECT_DIR$/OutputFiles/ES" />
+      <recent name="$PROJECT_DIR$/OutputFiles/SG" />
       <recent name="$PROJECT_DIR$/Final Submission/CN" />
       <recent name="$PROJECT_DIR$/Final Submission/ES" />
     </key>
@@ -380,7 +355,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sentiment-pred" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part5siyuan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -416,7 +391,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sentiment-pred" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part5Perceptron2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Attempts/part5Perceptron2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -914,7 +889,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481088508473</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="updated output files">
+      <created>1481088817525</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1481088817525</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -936,7 +918,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31084338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4060241" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2313253" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3927711" sideWeight="0.49781182" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1000,7 +982,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="optimal coefficient is 0.01 for transition param (state, obs) that never apprears in train set" />
     <MESSAGE value="cleaned up files and added screenshots of output comparison" />
     <MESSAGE value="index out of range for ES" />
     <MESSAGE value="no problem now" />
@@ -1025,41 +1006,14 @@
     <MESSAGE value="Cleaned up" />
     <MESSAGE value="Submission" />
     <MESSAGE value="test.out added into final submission" />
-    <option name="LAST_COMMIT_MESSAGE" value="test.out added into final submission" />
+    <MESSAGE value="updated output files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated output files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EN_BIO/test.p5.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EN_BIO/dev.p5.window.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="1337" column="5" selection-start-line="1337" selection-start-column="5" selection-end-line="1337" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Attempts/part5window.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="172" column="16" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_EN.p5_noNegation.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="8366" column="1" selection-start-line="8366" selection-start-column="0" selection-end-line="8366" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1233,7 +1187,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tune_output.txt">
+    <entry file="file://$PROJECT_DIR$/Attempts/tune_output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1860">
           <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
@@ -1299,7 +1253,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tune.sh">
+    <entry file="file://$PROJECT_DIR$/Attempts/tune.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
@@ -1331,26 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part5Perceptron.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2895">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/part5Perceptron2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OutputFiles/EN/dev.p4.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1367,10 +1301,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part5siyuan.py">
+    <entry file="file://$PROJECT_DIR$/OutputFiles/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2445">
-          <caret line="165" column="14" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+        <state relative-caret-position="-120">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OutputFiles/SG/dev.p2.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2250">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1383,26 +1333,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
+    <entry file="file://$PROJECT_DIR$/Attempts/part5Perceptron2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
+        <state relative-caret-position="285">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES_test/test.Perceptron.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OutputFiles/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OutputFiles/SG/dev.p2.out">
+    <entry file="file://$PROJECT_DIR$/OutputFiles/EN/test.preceptron.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OutputFiles/ES/test.Perceptron.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part5Perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="204" column="10" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding />
         </state>
       </provider>
