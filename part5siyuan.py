@@ -255,11 +255,13 @@ def getEffectivePosNegWords():
 
 
 def runPart3(type,obs_space, e_param, t_param, count):
-    dev_file = io.open(type+'/dev.in', 'rb')
-    out_file = io.open(type+'/dev.p5.out', 'wb')
-    #
-    # dev_file = io.open(type + '/test.in', 'rb')
-    # out_file = io.open(type + '/test.p5.out', 'w')
+    # dev_file = io.open(type+'/dev.in', 'rb')
+    # out_file = io.open(type+'/dev.p5.out', 'wb')
+
+
+    dev_file = io.open(type + '/test.in', 'rb')
+    out_file = io.open(type + '/test.out', 'wb')
+
     X = []
 
     effPosSet, effNegSet = getEffectivePosNegWords()
