@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-for i in 0.05 0.2
+for i in 0.01 0.2
 do
    # your-unix-command-here
 

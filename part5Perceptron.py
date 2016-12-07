@@ -17,8 +17,10 @@ obs_space = set()
 a = 11
 t_param = np.zeros((11, 11, 11))
 
-b_inSpace = float(sys.argv[1])
-b_notInSpace = float(sys.argv[2])  # 1/count+1
+# b_inSpace = float(sys.argv[1])
+# b_notInSpace = float(sys.argv[2])  # 1/count+1
+b_inSpace = 0
+b_notInSpace = 0
 # num of iteration over the training set
 T = 20
 
@@ -92,23 +94,23 @@ def viterbiAlgo(X):
 
 
     # start, 1 -> 2
-
-    x = X[1]
-    layer = []
-    for j in range(2, 9): # 2-8
-        temp_score = []
-        if ((x in obs_space) & (x in e_param[j])):
-            b = e_param[j][x]
-        elif (x in obs_space):
-            b = b_inSpace                                                           # to be tuned
-        else:
-            b = b_notInSpace
-        for k in range(2,9):
-            temp_score.append(t_param[1][k][j] + b)   #  start + y1 + y2
-        max_value = max(temp_score)
-        max_index = temp_score.index(max_value)
-        layer.append((max_value, max_index + 2))
-    layers.append(layer)  #
+    if len(X) > 1:
+        x = X[1]
+        layer = []
+        for j in range(2, 9): # 2-8
+            temp_score = []
+            if ((x in obs_space) & (x in e_param[j])):
+                b = e_param[j][x]
+            elif (x in obs_space):
+                b = b_inSpace                                                           # to be tuned
+            else:
+                b = b_notInSpace
+            for k in range(2,9):
+                temp_score.append(t_param[1][k][j] + b)   #  start + y1 + y2
+            max_value = max(temp_score)
+            max_index = temp_score.index(max_value)
+            layer.append((max_value, max_index + 2))
+        layers.append(layer)  #
 
 
     # calculate path i=(2,...,n)
@@ -163,13 +165,13 @@ def updateParam(X, Y, Ytrain):
 
 
 
-def train():
+def train(type):
     ############################# initialize parameter ####################################
 
     for trainStep in range(T):
-        # print ('Iteration: ', trainStep)
+        print ('Iteration: ', trainStep)
         ## read and parse file
-        train_file = open('train_EN', 'r')
+        train_file = open(type+'/train', 'r')
         Ygold = ['PRESTART', 'START']
         X = []
 
@@ -218,9 +220,9 @@ def runPerceptron(type):
 #             ['PRESTART', 'START', 'O', 'O', 'O', 'O', 'STOP', 'POSTSTOP'])
 # viterbiAlgo(['New', 'Year',','])
 
-
-train()
-runPerceptron('EN')
+for type in ['ES']:
+    train(type)
+    runPerceptron(type)
 # print(e_param)
 # print(obs_space)
 # print(t_param)
