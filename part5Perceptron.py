@@ -19,8 +19,8 @@ t_param = np.zeros((11, 11, 11))
 
 # b_inSpace = float(sys.argv[1])
 # b_notInSpace = float(sys.argv[2])  # 1/count+1
-b_inSpace = 0
-b_notInSpace = 0
+b_inSpace = 0.1
+b_notInSpace = 1
 # num of iteration over the training set
 T = 20
 
@@ -223,7 +223,7 @@ def runPerceptron(type):
 # viterbiAlgo(['New', 'Year',','])
 
 # for type in ['ES_test','EN_test']:
-for type in ['ES', 'EN']:
+for type in [ 'EN']:
     train(type)
     runPerceptron(type)
 # print(e_param)
